@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="gallery" size="1.000000 1.501466" />
+    <ImageTarget name="embedded" size="1.000000 1.500000" />
+    <ImageTarget name="gamexr" size="1.000000 1.501466" />
+    <ImageTarget name="ios" size="1.000000 1.501466" />
+    <ImageTarget name="iot" size="1.000000 1.500000" />
+  </Tracking>
+</QCARConfig>
