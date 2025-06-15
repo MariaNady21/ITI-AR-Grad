@@ -1,0 +1,13 @@
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class RestartGameVuforia : MonoBehaviour
+{
+
+    public string sceneName; // «ﬂ »Ì Â‰« «”„ «·„‘Âœ «··Ì ⁄«Ì“… Ì‘ €·
+
+    public void LoadSceneByName()
+    {
+        SceneManager.LoadScene(1);
+    }
+}
