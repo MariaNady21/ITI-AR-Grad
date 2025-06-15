@@ -6,6 +6,6 @@ public class BACK : MonoBehaviour
     // Ïí ÇáÏÇáÉ Çááí ÈÊÊÔÛá áãÇ ÊÏæÓ Úáì ÇáÒÑ
     public void LoadSceneByBack()
     {
-        SceneManager.LoadScene(0); // Ïå ÈíİÊÍ ÇáãÔåÏ ÑŞã 0 İí Build Settings
+        SceneManager.LoadScene(5); // Ïå ÈíİÊÍ ÇáãÔåÏ ÑŞã 0 İí Build Settings
     }
 }
