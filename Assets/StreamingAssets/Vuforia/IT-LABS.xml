@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="GAMELAB" size="1.000000 1.501466" />
+    <ImageTarget name="IOTLAB" size="1.000000 1.501466" />
+    <ImageTarget name="IOSLAB" size="1.000000 1.501466" />
+    <ImageTarget name="GALLERYLAB" size="1.000000 1.501466" />
+    <ImageTarget name="EMBEDDEDLAB" size="1.000000 1.501466" />
+  </Tracking>
+</QCARConfig>
