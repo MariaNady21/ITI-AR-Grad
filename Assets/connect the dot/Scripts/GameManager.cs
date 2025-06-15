@@ -2,9 +2,9 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class GameManager : MonoBehaviour
+public class IOTGame : MonoBehaviour
 {
-    public static GameManager Instance;
+    public static IOTGame Instance;
 
     [Header("Line Drawing")]
     [SerializeField] private GameObject linePrefab;

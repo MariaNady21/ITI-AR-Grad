@@ -20,16 +20,16 @@ public class Node : MonoBehaviour, IPointerDownHandler, IPointerEnterHandler, IP
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        GameManager.Instance.StartDrawing(this);
+        IOTGame.Instance.StartDrawing(this);
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        GameManager.Instance.TryConnectTo(this);
+        IOTGame.Instance.TryConnectTo(this);
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        GameManager.Instance.EndDrawing();
+        IOTGame.Instance.EndDrawing();
     }
 }
