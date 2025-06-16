@@ -3,10 +3,12 @@
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
+
     [SerializeField] AudioSource backgroundMusic;
     [SerializeField] AudioSource sfxSource;
-
     public AudioClip[] musicClips;
+
+    private bool isMusicMuted = false; // متغير لمتابعة حالة الميوت
 
     void Awake()
     {
@@ -20,6 +22,7 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
     void Start()
     {
         if (backgroundMusic == null)
@@ -27,11 +30,13 @@ public class AudioManager : MonoBehaviour
             backgroundMusic = gameObject.AddComponent<AudioSource>();
             backgroundMusic.loop = true;
         }
+
         if (sfxSource == null)
         {
             sfxSource = gameObject.AddComponent<AudioSource>();
             sfxSource.loop = false;
         }
+
         PlayMusic("BackGround");
     }
 
@@ -39,7 +44,6 @@ public class AudioManager : MonoBehaviour
     {
         AudioClip clipToPlay = null;
 
-       
         foreach (AudioClip clip in musicClips)
         {
             if (clip.name == sfxName)
@@ -53,7 +57,6 @@ public class AudioManager : MonoBehaviour
         {
             sfxSource.PlayOneShot(clipToPlay);
         }
-       
     }
 
     public void PlayMusic(string musicName)
@@ -81,7 +84,6 @@ public class AudioManager : MonoBehaviour
                 backgroundMusic.Play();
             }
         }
-        
     }
 
     public void StopMusic()
@@ -92,5 +94,20 @@ public class AudioManager : MonoBehaviour
     public void SetMusicVolume(float volume)
     {
         backgroundMusic.volume = volume;
+    }
+
+    // ✅ الدالة الجديدة لتبديل تشغيل/إيقاف الموسيقى
+    public void ToggleMusic()
+    {
+        if (isMusicMuted)
+        {
+            backgroundMusic.Play();
+        }
+        else
+        {
+            backgroundMusic.Pause();
+        }
+
+        isMusicMuted = !isMusicMuted;
     }
 }
