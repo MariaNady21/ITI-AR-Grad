@@ -201,8 +201,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1392187268}
-        m_TargetAssemblyTypeName: AudioManagerLoaderAndToggler, Assembly-CSharp
+      - m_Target: {fileID: 1772081098}
+        m_TargetAssemblyTypeName: SceneSoundToggler, Assembly-CSharp
         m_MethodName: ToggleSound
         m_Mode: 1
         m_Arguments:
@@ -8670,7 +8670,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca6f75b1646df054390ef02baee38198, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bgiossAudioSource: {fileID: 1098334990}
 --- !u!4 &1392187269
 Transform:
   m_ObjectHideFlags: 0
@@ -14499,6 +14498,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1772081097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1772081099}
+  - component: {fileID: 1772081098}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1772081098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772081097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a9a951a447e2dc45a60e9ffc00e7bc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bgiossAudioSource: {fileID: 1098334990}
+--- !u!4 &1772081099
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772081097}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -141.17041, y: -185.71191, z: 2631}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1794789042
 GameObject:
   m_ObjectHideFlags: 0
@@ -19818,8 +19862,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1392187268}
-        m_TargetAssemblyTypeName: AudioManagerLoaderAndToggler, Assembly-CSharp
+      - m_Target: {fileID: 1772081098}
+        m_TargetAssemblyTypeName: SceneSoundToggler, Assembly-CSharp
         m_MethodName: ToggleSound
         m_Mode: 1
         m_Arguments:
@@ -25273,8 +25317,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1392187268}
-        m_TargetAssemblyTypeName: AudioManagerLoaderAndToggler, Assembly-CSharp
+      - m_Target: {fileID: 1772081098}
+        m_TargetAssemblyTypeName: SceneSoundToggler, Assembly-CSharp
         m_MethodName: ToggleSound
         m_Mode: 1
         m_Arguments:
@@ -30551,3 +30595,4 @@ SceneRoots:
   - {fileID: 144039201}
   - {fileID: 1392187269}
   - {fileID: 1761733964}
+  - {fileID: 1772081099}

@@ -947,6 +947,7 @@ GameObject:
   - component: {fileID: 351220324}
   - component: {fileID: 350765220}
   - component: {fileID: 1401511933}
+  - component: {fileID: 1401511935}
   - component: {fileID: 1401511934}
   m_Layer: 5
   m_Name: Audio
@@ -6105,7 +6106,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca6f75b1646df054390ef02baee38198, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bgiossAudioSource: {fileID: 0}
 --- !u!4 &700093661
 Transform:
   m_ObjectHideFlags: 0
@@ -6543,6 +6543,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 761767305}
   m_CullTransparentMesh: 1
+--- !u!1 &777334678
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 777334680}
+  - component: {fileID: 777334679}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &777334679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777334678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a9a951a447e2dc45a60e9ffc00e7bc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bgiossAudioSource: {fileID: 0}
+--- !u!4 &777334680
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777334678}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.9236532, y: 0.2062734, z: 44225.39}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &946486554
 GameObject:
   m_ObjectHideFlags: 0
@@ -8398,8 +8443,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 700093660}
-        m_TargetAssemblyTypeName: AudioManagerLoaderAndToggler, Assembly-CSharp
+      - m_Target: {fileID: 777334679}
+        m_TargetAssemblyTypeName: SceneSoundToggler, Assembly-CSharp
         m_MethodName: ToggleSound
         m_Mode: 1
         m_Arguments:
@@ -8432,6 +8477,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1401511935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364607684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a9a951a447e2dc45a60e9ffc00e7bc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bgiossAudioSource: {fileID: 0}
 --- !u!1 &1413535635
 GameObject:
   m_ObjectHideFlags: 0
@@ -9056,3 +9114,4 @@ SceneRoots:
   - {fileID: 620862413}
   - {fileID: 666077066}
   - {fileID: 700093661}
+  - {fileID: 777334680}
