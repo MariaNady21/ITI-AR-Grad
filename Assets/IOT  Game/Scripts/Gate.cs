@@ -8,19 +8,20 @@ public class Gate : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        
     }
 
   public void OnHIT()
     {
-        if (!isOpen)
+         if (!isOpen)
         {
-            animator.SetTrigger("Open");
-            isOpen = true;
+            animator.SetTrigger("OpenGate");
         }
         else
         {
-            animator.SetTrigger("Close"); // لو عملتي حالة إغلاق
-            isOpen = false;
+            animator.SetTrigger("CloseGate");
         }
+
+        isOpen = !isOpen;
     }
 }
