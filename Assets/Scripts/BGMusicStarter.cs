@@ -1,13 +1,12 @@
 using UnityEngine;
 
-public class BGSoundStarterios : MonoBehaviour
+public class BGMusicStarter : MonoBehaviour
 {
- 
     void Start()
     {
         if (AudioManager.instance != null)
         {
-            AudioManager.instance.PlayMusic("bg ios main");
+            AudioManager.instance.PlayMusic("BackGround");
         }
     }
 
@@ -26,6 +25,4 @@ public class BGSoundStarterios : MonoBehaviour
             AudioManager.instance.StopMusic();
         }
     }
-
-
 }
