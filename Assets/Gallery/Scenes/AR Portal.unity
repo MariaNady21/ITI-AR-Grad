@@ -3603,7 +3603,7 @@ Transform:
   m_GameObject: {fileID: 647373188}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1.71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3773,31 +3773,31 @@ PrefabInstance:
       objectReference: {fileID: 1732339160}
     - target: {fileID: 8360654570878949178, guid: 18d9497f91077e04db18d58ac314a0e7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.2
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 8360654570878949178, guid: 18d9497f91077e04db18d58ac314a0e7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: -0.7
       objectReference: {fileID: 0}
     - target: {fileID: 8360654570878949178, guid: 18d9497f91077e04db18d58ac314a0e7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4
+      value: 3.904
       objectReference: {fileID: 0}
     - target: {fileID: 8360654570878949178, guid: 18d9497f91077e04db18d58ac314a0e7, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.99975085
       objectReference: {fileID: 0}
     - target: {fileID: 8360654570878949178, guid: 18d9497f91077e04db18d58ac314a0e7, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8360654570878949178, guid: 18d9497f91077e04db18d58ac314a0e7, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.022320447
       objectReference: {fileID: 0}
     - target: {fileID: 8360654570878949178, guid: 18d9497f91077e04db18d58ac314a0e7, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8360654570878949178, guid: 18d9497f91077e04db18d58ac314a0e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3805,7 +3805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8360654570878949178, guid: 18d9497f91077e04db18d58ac314a0e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 2.558
       objectReference: {fileID: 0}
     - target: {fileID: 8360654570878949178, guid: 18d9497f91077e04db18d58ac314a0e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -4342,7 +4342,7 @@ GameObject:
   - component: {fileID: 1772426262}
   - component: {fileID: 1772426261}
   - component: {fileID: 1772426260}
-  - component: {fileID: 1772426259}
+  - component: {fileID: 1772426263}
   m_Layer: 0
   m_Name: Ground Plane Stage
   m_TagString: Untagged
@@ -4350,23 +4350,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1772426259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1772426258}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1308684972, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1772426261}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: 
-  mDatasetName: 
-  mCastedBehaviour: {fileID: 1772426261}
 --- !u!114 &1772426260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4431,7 +4414,7 @@ MonoBehaviour:
   mSelectedStageType: 0
   mPlaneReference: {fileID: 0}
   mMidAirReference: {fileID: 0}
-  mPreview: {fileID: 1772426259}
+  mPreview: {fileID: 1772426263}
 --- !u!4 &1772426262
 Transform:
   m_ObjectHideFlags: 0
@@ -4449,6 +4432,23 @@ Transform:
   - {fileID: 679713409}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1772426263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772426258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1308684972, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1772426261}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: 
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 1772426261}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

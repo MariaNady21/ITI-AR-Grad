@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
-
+﻿using System.Collections;
+using System.Collections.Generic;
 using TMPro;
+using UnityEngine;
 using UnityEngine.InputSystem;
-using System.Collections;
+using UnityEngine.SceneManagement;
 using Vuforia;
 
 public class GameManger : MonoBehaviour
@@ -196,5 +196,15 @@ public class GameManger : MonoBehaviour
         scoreText.gameObject.SetActive(false);
     }
 
-    
+    public void ReloadScene()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.buildIndex);
+
+        AudioManager.instance.PlayMusic("BackGround");
+    }
+
+
+
+
 }

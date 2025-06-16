@@ -35,7 +35,7 @@ public class SceneLoader : MonoBehaviour
     // Function to Load Scene 3
     public void LoadSceneIOTInfo()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(9);
     }
 
 
