@@ -119,10 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> XR-Game
 --- !u!1 &31932668
 GameObject:
   m_ObjectHideFlags: 0
