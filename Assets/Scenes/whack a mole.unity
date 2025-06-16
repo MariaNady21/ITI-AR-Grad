@@ -7261,6 +7261,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 388872345485341149, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
+      propertyPath: musicClips.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 388872345485341149, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
+      propertyPath: 'musicClips.Array.data[7]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 775babc638cf5e748b5e3235d42aa74b, type: 3}
+    - target: {fileID: 388872345485341149, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
+      propertyPath: 'musicClips.Array.data[8]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 1bc5312618cb64943a675c9acb557588, type: 3}
     - target: {fileID: 1474666134843450212, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
       propertyPath: m_Name
       value: Sound Manger

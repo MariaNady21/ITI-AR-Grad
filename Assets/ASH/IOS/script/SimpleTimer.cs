@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using TMPro;
 
 public class SimpleTimer : MonoBehaviour
@@ -8,17 +8,15 @@ public class SimpleTimer : MonoBehaviour
     private bool isRunning = false;
     private bool hasEnded = false;
 
-    [Header("äÊíÌÉ ÇááÚÈ")]
-    public GameObject winImage;      // ÕæÑÉ ÇáÝæÒ
-    public GameObject loseImage;     // ÕæÑÉ ÇáÎÓÇÑÉ
+    [Header("Ù†ØªÙŠØ¬Ø© Ø§Ù„Ù„Ø¹Ø¨")]
+    public GameObject winImage;
+    public GameObject loseImage;
 
-    [Header("ÍÇÌÇÊ åÊÎÊÝí ÈÚÏ ÇáäåÇíÉ")]
+    [Header("Ø­Ø§Ø¬Ø§Øª Ù‡ØªØ®ØªÙÙŠ Ø¨Ø¹Ø¯ Ø§Ù„Ù†Ù‡Ø§ÙŠØ©")]
     public GameObject[] objectsToHideOnEnd;
 
-    [Header("ÃÕæÇÊ ÇáäÊíÌÉ")]
-    public AudioClip winSound;
-    public AudioClip loseSound;
-    public AudioSource audioSource;
+    [Header("Audio Source Ø®Ø§Øµ Ø¨ØµÙˆØª Ø§Ù„Ø®Ù„ÙÙŠØ©")]
+    public AudioSource bgiossAudioSource; // â† Ø§Ø³Ø­Ø¨ÙŠ Ø¹Ù„ÙŠÙ‡ AudioSource Ø¨ØªØ§Ø¹ bgioss Ù…Ù† Inspector
 
     void OnEnable()
     {
@@ -30,7 +28,6 @@ public class SimpleTimer : MonoBehaviour
     {
         if (!isRunning || hasEnded) return;
 
-        // ÊÍÏíË ÇáæÞÊ
         if (timeRemaining > 0)
         {
             timeRemaining -= Time.deltaTime;
@@ -66,9 +63,10 @@ public class SimpleTimer : MonoBehaviour
         if (winImage != null)
             winImage.SetActive(true);
 
-        if (audioSource != null && winSound != null)
-            audioSource.PlayOneShot(winSound);
+        if (AudioManager.instance != null)
+            AudioManager.instance.PlaySFX("I won");
 
+        StopBGIOSSound();
         HideOthers();
     }
 
@@ -77,10 +75,24 @@ public class SimpleTimer : MonoBehaviour
         if (loseImage != null)
             loseImage.SetActive(true);
 
-        if (audioSource != null && loseSound != null)
-            audioSource.PlayOneShot(loseSound);
+        if (AudioManager.instance != null)
+            AudioManager.instance.PlaySFX("game-over");
 
+        StopBGIOSSound();
         HideOthers();
+    }
+
+    void StopBGIOSSound()
+    {
+        if (bgiossAudioSource != null && bgiossAudioSource.isPlaying)
+        {
+            bgiossAudioSource.Stop();
+            Debug.Log("ðŸŽµ bgioss stopped");
+        }
+        else
+        {
+            Debug.LogWarning("ðŸ”‡ bgiossAudioSource Ù…Ø´ Ù…ØªÙˆØµÙ„ Ø£Ùˆ Ù…Ø´ Ø´ØºØ§Ù„");
+        }
     }
 
     void HideOthers()

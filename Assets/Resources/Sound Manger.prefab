@@ -55,6 +55,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 46b9e67177168db4d90f732cd2c053a7, type: 3}
   - {fileID: 8300000, guid: 47b48f7446afe77428d27c0d685e177b, type: 3}
   - {fileID: 8300000, guid: 2a1fe24aae58dc44c9e56d54939f2a17, type: 3}
+  - {fileID: 8300000, guid: 813d69617be52dc408498450b6c1bd91, type: 3}
+  - {fileID: 8300000, guid: 775babc638cf5e748b5e3235d42aa74b, type: 3}
+  - {fileID: 8300000, guid: 1bc5312618cb64943a675c9acb557588, type: 3}
+  disableAutoMusic: 1
 --- !u!1 &2431284058414832209
 GameObject:
   m_ObjectHideFlags: 0
