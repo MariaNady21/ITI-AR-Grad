@@ -201,13 +201,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1392187267}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1392187268}
+        m_TargetAssemblyTypeName: AudioManagerLoaderAndToggler, Assembly-CSharp
+        m_MethodName: ToggleSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -8652,7 +8652,7 @@ GameObject:
   - component: {fileID: 1392187269}
   - component: {fileID: 1392187268}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8670,6 +8670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca6f75b1646df054390ef02baee38198, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bgiossAudioSource: {fileID: 1098334990}
 --- !u!4 &1392187269
 Transform:
   m_ObjectHideFlags: 0
@@ -8897,6 +8898,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: 
+  bgiossAudioSource: {fileID: 0}
 --- !u!4 &1408811732
 Transform:
   m_ObjectHideFlags: 0
@@ -19815,7 +19817,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1893615594}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1392187268}
+        m_TargetAssemblyTypeName: AudioManagerLoaderAndToggler, Assembly-CSharp
+        m_MethodName: ToggleSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1893615594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25258,7 +25272,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2132395738}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1392187268}
+        m_TargetAssemblyTypeName: AudioManagerLoaderAndToggler, Assembly-CSharp
+        m_MethodName: ToggleSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2132395738
 MonoBehaviour:
   m_ObjectHideFlags: 0
