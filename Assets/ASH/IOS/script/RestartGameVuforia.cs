@@ -8,6 +8,6 @@ public class RestartGameVuforia : MonoBehaviour
 
     public void LoadSceneByName()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(6);
     }
 }
