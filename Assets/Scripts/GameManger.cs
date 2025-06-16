@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine.InputSystem;
 using System.Collections;
 using Vuforia;
+using UnityEngine.SceneManagement;
 
 public class GameManger : MonoBehaviour
 {
@@ -16,9 +17,8 @@ public class GameManger : MonoBehaviour
     [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] private GameObject gameOverImage;
     [SerializeField] private GameObject winImage;
+    [SerializeField] public GameObject explosionVFX;
 
-   
-    //private bool isSpawned = false;
 
 
     private int score = 0;
@@ -196,5 +196,7 @@ public class GameManger : MonoBehaviour
         scoreText.gameObject.SetActive(false);
     }
 
-    
+   
+
+
 }

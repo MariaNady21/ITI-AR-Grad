@@ -869,6 +869,7 @@ MonoBehaviour:
   scoreText: {fileID: 1560054267}
   gameOverImage: {fileID: 1683295229}
   winImage: {fileID: 406148297}
+  explosionVFX: {fileID: 3740193805690738414, guid: 626274bfa0ecf6841977f1bce8c6bf16, type: 3}
 --- !u!4 &740006043
 Transform:
   m_ObjectHideFlags: 0
@@ -6101,6 +6102,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6a7432bae01a2cf459fcd5748b3261d4, type: 3}
   - {fileID: 8300000, guid: 46b9e67177168db4d90f732cd2c053a7, type: 3}
   - {fileID: 8300000, guid: 47b48f7446afe77428d27c0d685e177b, type: 3}
+  - {fileID: 8300000, guid: 5894e98f74bc9c949af03091c3bb7194, type: 3}
 --- !u!4 &1275675885
 Transform:
   m_ObjectHideFlags: 0
