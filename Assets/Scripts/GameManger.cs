@@ -1,10 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using TMPro;
+﻿using System.Collections.Generic;
 using UnityEngine;
+
+using TMPro;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
+using System.Collections;
 using Vuforia;
+using UnityEngine.SceneManagement;
 
 public class GameManger : MonoBehaviour
 {
@@ -16,9 +17,8 @@ public class GameManger : MonoBehaviour
     [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] private GameObject gameOverImage;
     [SerializeField] private GameObject winImage;
+    [SerializeField] public GameObject explosionVFX;
 
-   
-    //private bool isSpawned = false;
 
 
     private int score = 0;
@@ -196,15 +196,7 @@ public class GameManger : MonoBehaviour
         scoreText.gameObject.SetActive(false);
     }
 
-    public void ReloadScene()
-    {
-        Scene currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.buildIndex);
-
-        AudioManager.instance.PlayMusic("BackGround");
-    }
-
-
+   
 
 
 }

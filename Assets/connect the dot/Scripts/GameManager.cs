@@ -1,11 +1,19 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-
+using UnityEngine.UI;
 public class IOTGame : MonoBehaviour
 {
     public static IOTGame Instance;
-
+    [SerializeField] private Image overlayImage;
+    public void SetOverlayColor(Color color)
+    {
+        if (overlayImage != null)
+        {
+            color.a = 0.3f; // Set desired transparency (30% opacity)
+            overlayImage.color = color;
+        }
+    }
     [Header("Line Drawing")]
     [SerializeField] private GameObject linePrefab;
     [SerializeField] private Transform lineParent;
@@ -130,6 +138,11 @@ public class IOTGame : MonoBehaviour
     }
     public void EndDrawing()
     {
+        if (visitedNodes.Count > 1 && visitedNodes[0].ColorId == visitedNodes[1].ColorId)
+        {
+            SetOverlayColor(visitedNodes[0].NodeColor);
+        }
+
         isDrawing = false;
         startNode = null;
         currentLine = null;
