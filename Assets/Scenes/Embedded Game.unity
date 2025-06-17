@@ -865,7 +865,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 997746408}
         m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: LoadSceneEmbeddedInfo
+        m_MethodName: LoadSceneEmbeddedui
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

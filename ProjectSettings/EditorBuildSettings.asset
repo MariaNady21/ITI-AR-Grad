@@ -6,20 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/XRUIpanel.unity
-    guid: 260b8e24276c7e34093725b64ddb7c2c
-  - enabled: 1
     path: Assets/Scenes/IOSUIPanel.unity
     guid: 7051c66583d3b6044b784e7185063b29
-  - enabled: 1
-    path: Assets/Scenes/IOTUIpanal.unity
-    guid: 2b76951094e95d941a98b06a15111d9a
-  - enabled: 1
-    path: Assets/Scenes/EmbeddedUIpanel.unity
-    guid: ee5f08fbf7d08854285f635476386c61
-  - enabled: 1
-    path: Assets/Scenes/galleryUIpanel.unity
-    guid: d4b459752a439a246bde28d54874eff0
   - enabled: 1
     path: Assets/ASH/IOS/scene/iosui.unity
     guid: 5ee4f1210548a38458e0db28222f47c9
@@ -30,17 +18,17 @@ EditorBuildSettings:
     path: Assets/Scenes/whack a mole.unity
     guid: 9384ef1cd0e4d35418121cfe1a0a98cd
   - enabled: 1
-    path: Assets/ASH/IOT/Scene/IOT UI.unity
-    guid: 02996d4290e13b645814b6ee7a18c340
-  - enabled: 1
-    path: Assets/Scenes/car labs.unity
-    guid: 543e22c6e14d86d4aaab28a0894adc7e
-  - enabled: 1
     path: Assets/ASH/EMEDDED/Scenes/Emeddedui.unity
     guid: c66302ad44fd74f4a87b7fd5a1f5f155
   - enabled: 1
     path: Assets/Scenes/Embedded Game.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/ASH/IOT/Scene/IOT UI.unity
+    guid: 02996d4290e13b645814b6ee7a18c340
+  - enabled: 1
+    path: Assets/Scenes/car labs.unity
+    guid: 543e22c6e14d86d4aaab28a0894adc7e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

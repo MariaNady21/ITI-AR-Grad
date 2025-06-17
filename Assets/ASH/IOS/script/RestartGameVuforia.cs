@@ -24,6 +24,6 @@ public class RestartGameVuforia : MonoBehaviour
         }
 
         // 🔁 إعادة تحميل المشهد
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(2);
     }
 }
