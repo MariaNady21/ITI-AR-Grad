@@ -32,6 +32,9 @@ public class Mole : MonoBehaviour
 
         if (isBomb)
         {
+            AudioManager.instance.PlaySFX("Explosion");
+            GameObject vfx = Instantiate(gameManager.explosionVFX, transform.position, Quaternion.identity);
+            Destroy(vfx, 2f);
             gameManager.PlayerLose(); // استدعاء خسارة
         }
         else
