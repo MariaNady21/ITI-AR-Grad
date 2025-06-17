@@ -71,7 +71,7 @@ public class SceneLoader : MonoBehaviour
     // Function to Load Scene 6
     public void LoadSceneEmbeddedGame()
     {
-        SceneManager.LoadScene(10);
+        SceneManager.LoadScene(11);
     }
 
     //---------------------------------------------
