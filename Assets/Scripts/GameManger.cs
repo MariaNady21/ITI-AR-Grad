@@ -16,8 +16,9 @@ public class GameManger : MonoBehaviour
     [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] private GameObject gameOverImage;
     [SerializeField] private GameObject winImage;
+    [SerializeField] public GameObject explosionVFX;
 
-   
+
     //private bool isSpawned = false;
 
 

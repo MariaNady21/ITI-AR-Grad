@@ -561,6 +561,7 @@ MonoBehaviour:
   scoreText: {fileID: 1560054267}
   gameOverImage: {fileID: 1683295229}
   winImage: {fileID: 406148297}
+  explosionVFX: {fileID: 7207109987891872099, guid: d1dcc4bfbc6000944b2cfb0dd422a8e0, type: 3}
 --- !u!4 &740006043
 Transform:
   m_ObjectHideFlags: 0
@@ -6870,7 +6871,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 388872345485341149, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
       propertyPath: musicClips.Array.size
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 388872345485341149, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
       propertyPath: 'musicClips.Array.data[7]'
@@ -6880,6 +6881,10 @@ PrefabInstance:
       propertyPath: 'musicClips.Array.data[8]'
       value: 
       objectReference: {fileID: 8300000, guid: 1bc5312618cb64943a675c9acb557588, type: 3}
+    - target: {fileID: 388872345485341149, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
+      propertyPath: 'musicClips.Array.data[9]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 5894e98f74bc9c949af03091c3bb7194, type: 3}
     - target: {fileID: 1474666134843450212, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
       propertyPath: m_Name
       value: Sound Manger
