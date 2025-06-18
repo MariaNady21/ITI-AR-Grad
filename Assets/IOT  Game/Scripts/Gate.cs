@@ -12,6 +12,7 @@ public class Gate : MonoBehaviour
 
   public void OnHIT()
     {
+        Debug.Log("Clicked on: " + gameObject.name);
         if (!isOpen)
         {
             animator.SetTrigger("Open");
@@ -19,7 +20,7 @@ public class Gate : MonoBehaviour
         }
         else
         {
-            animator.SetTrigger("Close"); // لو عملتي حالة إغلاق
+            animator.SetTrigger("Close"); 
             isOpen = false;
         }
     }
