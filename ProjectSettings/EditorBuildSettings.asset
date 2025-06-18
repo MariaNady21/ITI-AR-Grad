@@ -21,8 +21,8 @@ EditorBuildSettings:
     path: Assets/ASH/EMEDDED/Scenes/Emeddedui.unity
     guid: c66302ad44fd74f4a87b7fd5a1f5f155
   - enabled: 1
-    path: Assets/Scenes/Embedded Game.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/EmbeddedGame.unity
+    guid: 3afdd7a942999864fb57154f963bdeeb
   - enabled: 1
     path: Assets/ASH/IOT/Scene/IOT UI.unity
     guid: 02996d4290e13b645814b6ee7a18c340
