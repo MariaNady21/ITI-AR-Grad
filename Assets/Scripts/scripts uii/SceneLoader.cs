@@ -7,14 +7,14 @@ public class SceneLoader : MonoBehaviour
     // Function to Load Scene 0
     public void LoadSceneIOSui()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(9);
     }
 
     //---------------------------------------------
     // Function to Load Scene 1
     public void LoadSceneIOSgame()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 
     public void BackFromGame()
@@ -31,14 +31,14 @@ public class SceneLoader : MonoBehaviour
     // Function to Load Scene 2
     public void LoadSceneIOTGame()
     {
-        SceneManager.LoadScene(7);
+        SceneManager.LoadScene(2);
     }
 
     //---------------------------------------------
     // Function to Load Scene 3
-    public void LoadSceneIOTui()
+    public void LoadScenegallery()
     {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(5);
     }
 
 
@@ -74,14 +74,14 @@ public class SceneLoader : MonoBehaviour
     // Function to Load Scene 6
     public void LoadSceneEmbeddedGame()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(4);
     }
 
     //---------------------------------------------
     // Function to Load Scene 0
     public void LoadSceneEmbeddedui()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(55);
     }
     public void BackFromEmbeddedGame()
     {

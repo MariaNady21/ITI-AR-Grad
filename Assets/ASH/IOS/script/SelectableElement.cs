@@ -7,6 +7,9 @@ public class SelectableElement : MonoBehaviour
     private Vector3 originalScale;
     private bool isSelected = false;
 
+    [Header("Drag Handler Reference")]
+    public DragUIButton dragHandler; // 👈 اربطيها من Inspector
+
     void Start()
     {
         originalScale = transform.localScale;
@@ -59,5 +62,8 @@ public class SelectableElement : MonoBehaviour
         transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
         isSelected = false;
         selectedElement = null;
+
+        if (dragHandler != null)
+            dragHandler.canDrag = true; // ✅ نفعل السحب بعد الإدخال
     }
 }

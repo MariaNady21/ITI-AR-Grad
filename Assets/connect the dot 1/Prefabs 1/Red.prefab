@@ -121,5 +121,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2263d6b897ffaab4d8fcc2242c927f33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeColor: {r: 0.98490566, g: 0.10964036, b: 0.10964036, a: 0}
-  nodeID: red
+  nodeColor: {r: 0.9607843, g: 0.05490196, b: 0.8, a: 0}
+  nodeID: pink

@@ -6871,7 +6871,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 388872345485341149, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
       propertyPath: musicClips.Array.size
-      value: 10
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 388872345485341149, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
       propertyPath: 'musicClips.Array.data[7]'
@@ -6885,6 +6885,18 @@ PrefabInstance:
       propertyPath: 'musicClips.Array.data[9]'
       value: 
       objectReference: {fileID: 8300000, guid: 5894e98f74bc9c949af03091c3bb7194, type: 3}
+    - target: {fileID: 388872345485341149, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
+      propertyPath: 'musicClips.Array.data[10]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 4836ec8da3841aa4cbef8225b35c42ab, type: 3}
+    - target: {fileID: 388872345485341149, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
+      propertyPath: 'musicClips.Array.data[11]'
+      value: 
+      objectReference: {fileID: 8300000, guid: dd0eb6cd5468e8848b66ed37c0015ae1, type: 3}
+    - target: {fileID: 388872345485341149, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
+      propertyPath: 'musicClips.Array.data[12]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 83fbecd5440d95f4e8b223e1af781234, type: 3}
     - target: {fileID: 1474666134843450212, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
       propertyPath: m_Name
       value: Sound Manger
