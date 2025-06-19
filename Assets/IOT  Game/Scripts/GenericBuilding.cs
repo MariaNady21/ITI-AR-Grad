@@ -53,7 +53,7 @@ public class GenericBuilding : MonoBehaviour
                 return vehicle == VehicleType.Truck ? 10 : -5;
 
             case BuildingType.redbuilding:
-                return vehicle == VehicleType.redvane ? 10 : -5;
+               return vehicle == VehicleType.redvane ? 10 : -5;
 
             case BuildingType.Factory:
               //  return vehicle == VehicleType.Loader ? 10 : -5;
