@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
-using Vuforia;
+
 
 public class GameManger : MonoBehaviour
 {

@@ -6,7 +6,7 @@ public class LineDrawerManager : MonoBehaviour
 {
     [SerializeField] LayerMask nodeLayer;
     [SerializeField] LayerMask gridLayer;
-    [SerializeField] GameObject winPanel; 
+    [SerializeField] GameObject winPanel;
     private Node startNode;
     private Node currentNode;
 
@@ -56,7 +56,7 @@ public class LineDrawerManager : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out RaycastHit hit, 100f))
+            if (Physics.Raycast(ray, out RaycastHit hit, 200f))
             {
                 Debug.Log("Hit: " + hit.collider.name);
             }
@@ -70,7 +70,7 @@ public class LineDrawerManager : MonoBehaviour
     void HandleStart(Vector2 screenPos)
     {
         Ray ray = Camera.main.ScreenPointToRay(screenPos);
-        if (Physics.Raycast(ray, out RaycastHit hit, 100f, nodeLayer))
+        if (Physics.Raycast(ray, out RaycastHit hit, 200f, nodeLayer))
         {
             Node node = hit.collider.GetComponent<Node>();
             if (completedIDs.Contains(node.nodeID))
@@ -95,7 +95,7 @@ public class LineDrawerManager : MonoBehaviour
         if (startNode == null) return;
 
         Ray ray = Camera.main.ScreenPointToRay(screenPos);
-        if (Physics.Raycast(ray, out RaycastHit hit, 100f, gridLayer))
+        if (Physics.Raycast(ray, out RaycastHit hit, 200f, gridLayer))
         {
             GameObject quad = hit.collider.gameObject;
 
@@ -109,7 +109,7 @@ public class LineDrawerManager : MonoBehaviour
         }
 
 
-        if (Physics.Raycast(ray, out RaycastHit nodeHit, 100f, nodeLayer))
+        if (Physics.Raycast(ray, out RaycastHit nodeHit, 200f, nodeLayer))
         {
             Node hitNode = nodeHit.collider.GetComponent<Node>();
 
@@ -128,7 +128,7 @@ public class LineDrawerManager : MonoBehaviour
 
         }
         //Debug.Log("Dragging, using color: " + currentColor);
-        
+
     }
     void ResetQuadColor(GameObject quad)
     {
