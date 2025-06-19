@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 156352883962324099}
   - component: {fileID: 3123043386796852713}
   m_Layer: 0
-  m_Name: Mole.007 (1)
+  m_Name: audio manger
   m_TagString: Audio
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

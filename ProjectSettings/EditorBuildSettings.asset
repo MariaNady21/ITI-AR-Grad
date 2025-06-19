@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/IOSUIPanel.unity
+    path: Assets/Scenes/MTUIPANEL.unity
     guid: 7051c66583d3b6044b784e7185063b29
   - enabled: 1
     path: Assets/ASH/IOS/scene/GAMEIOS.unity
