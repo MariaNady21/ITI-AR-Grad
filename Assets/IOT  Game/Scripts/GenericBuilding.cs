@@ -8,14 +8,16 @@ public class GenericBuilding : MonoBehaviour
     {
         Car,
         Truck,
-        Loader
+        redvane,
+        bus
     }
 
     public enum BuildingType
     {
         Office,
         Warehouse,
-        Factory
+        Factory,
+        redbuilding
     }
 
     void OnTriggerEnter(Collider other)
@@ -34,7 +36,8 @@ public class GenericBuilding : MonoBehaviour
         {
             case "car": return VehicleType.Car;
             case "truck": return VehicleType.Truck;
-            case "loader": return VehicleType.Loader;
+            case "redvane": return VehicleType.redvane;
+            case "bus": return VehicleType.bus;
             default: return null;
         }
     }
@@ -49,8 +52,12 @@ public class GenericBuilding : MonoBehaviour
             case BuildingType.Warehouse:
                 return vehicle == VehicleType.Truck ? 10 : -5;
 
+            case BuildingType.redbuilding:
+                return vehicle == VehicleType.redvane ? 10 : -5;
+
             case BuildingType.Factory:
-                return vehicle == VehicleType.Loader ? 10 : -5;
+              //  return vehicle == VehicleType.Loader ? 10 : -5;
+                return vehicle == VehicleType.bus ? 10 : -5;
 
             default:
                 return 0;
