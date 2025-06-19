@@ -12,7 +12,7 @@ public class Gate : MonoBehaviour
 
   public void OnHIT()
     {
-        Debug.Log("Clicked on: " + gameObject.name);
+        Debug.Log("Clicked on:hiiii " + gameObject.name);
         if (!isOpen)
         {
             animator.SetTrigger("Open");
