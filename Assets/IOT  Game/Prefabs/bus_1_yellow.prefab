@@ -636,7 +636,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5888915578388308648}
-  - component: {fileID: 5686479218910056968}
   - component: {fileID: 3850422881991412498}
   m_Layer: 0
   m_Name: bus_1_yellow
@@ -663,33 +662,6 @@ Transform:
   - {fileID: 2458823018652189733}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!54 &5686479218910056968
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7144083918721869459}
-  serializedVersion: 4
-  m_Mass: 5600
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &3850422881991412498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -702,9 +674,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7985c9ee4181154a9647dc6c4b0c1cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: 784bf9815e9f7d24fbd46122ed4b9b43, type: 2}
-  centerPoint: {fileID: 3590040941345797124, guid: 1da7976d4f8281a4d975f6d756d0b908, type: 3}
-  destination: {fileID: 6987850623357825099, guid: 659205bcdfe96204088aba1b99a30f2a, type: 3}
+  waypoints: []
+  radius: 5
+  speed: 1
+  script: {fileID: 0}
+  destinationoffice: {fileID: 0}
+  destinationfactory: {fileID: 0}
+  destinationwarehouse: {fileID: 0}
+  angle: 0
+  remainingLaps: 3
 --- !u!1 &7611193873094491566
 GameObject:
   m_ObjectHideFlags: 0
