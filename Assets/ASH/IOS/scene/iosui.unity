@@ -6750,7 +6750,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 193627704}
         m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: LoadSceneIOSInfo
+        m_MethodName: LoadSceneIOSgame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8712,7 +8712,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 193627704}
         m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: BackFromIOSGame
+        m_MethodName: BackFromGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
