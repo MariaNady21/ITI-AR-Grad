@@ -609,7 +609,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5330136737276387505}
-  - component: {fileID: 6479156080427135391}
   - component: {fileID: 18308304168314911}
   m_Layer: 0
   m_Name: car_5_blue
@@ -636,33 +635,6 @@ Transform:
   - {fileID: 1038500631911854929}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!54 &6479156080427135391
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6582564173352373868}
-  serializedVersion: 4
-  m_Mass: 1080
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &18308304168314911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -675,9 +647,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7985c9ee4181154a9647dc6c4b0c1cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 0}
-  centerPoint: {fileID: 0}
-  destination: {fileID: 0}
+  waypoints: []
+  radius: 5
+  speed: 1
+  script: {fileID: 0}
+  destinationoffice: {fileID: 0}
+  destinationfactory: {fileID: 0}
+  destinationwarehouse: {fileID: 0}
+  angle: 0
+  remainingLaps: 3
 --- !u!1 &6750080623878647167
 GameObject:
   m_ObjectHideFlags: 0

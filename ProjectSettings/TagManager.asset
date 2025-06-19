@@ -4,21 +4,24 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - image
-  - text
-  - input
-  - node
-  - button
-  - Mole
-  - Audio
+  - LapTrigger
+  - Gate
+  - gate
+  - officegate
+  - factorygate
+  - warehousegate
+  - truck
+  - car
+  - bus
+  - redgate
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Grid
+  - 
   - Water
   - UI
-  - Node
+  - 
   - 
   - 
   - 
