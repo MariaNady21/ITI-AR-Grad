@@ -6,7 +6,7 @@ public class LineDrawerManager : MonoBehaviour
 {
     [SerializeField] LayerMask nodeLayer;
     [SerializeField] LayerMask gridLayer;
-    [SerializeField] GameObject winPanel; 
+    [SerializeField] GameObject winPanel;
     private Node startNode;
     private Node currentNode;
 
@@ -128,7 +128,7 @@ public class LineDrawerManager : MonoBehaviour
 
         }
         //Debug.Log("Dragging, using color: " + currentColor);
-        
+
     }
     void ResetQuadColor(GameObject quad)
     {
