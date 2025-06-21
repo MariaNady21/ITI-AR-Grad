@@ -1,5 +1,6 @@
 ﻿using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms.Impl;
 using static UnityEngine.GraphicsBuffer;
 
@@ -181,6 +182,16 @@ public class Vehicle : MonoBehaviour
             }
         }
     }
+
+
+    public void ReloaScene()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.buildIndex);
+
+        
+    }
+
 
 }
 
