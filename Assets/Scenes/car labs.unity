@@ -2745,7 +2745,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3123043386796852713, guid: 93dfe2b79b403d342aeb403b3292c872, type: 3}
       propertyPath: musicClips.Array.size
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3123043386796852713, guid: 93dfe2b79b403d342aeb403b3292c872, type: 3}
       propertyPath: 'musicClips.Array.data[6]'
@@ -2755,6 +2755,14 @@ PrefabInstance:
       propertyPath: 'musicClips.Array.data[7]'
       value: 
       objectReference: {fileID: 8300000, guid: 1ba6323b644d0064ead6baf06dc469cb, type: 3}
+    - target: {fileID: 3123043386796852713, guid: 93dfe2b79b403d342aeb403b3292c872, type: 3}
+      propertyPath: 'musicClips.Array.data[8]'
+      value: 
+      objectReference: {fileID: 8300000, guid: d2555964d8c33ce43b73c7c833db2afa, type: 3}
+    - target: {fileID: 3123043386796852713, guid: 93dfe2b79b403d342aeb403b3292c872, type: 3}
+      propertyPath: 'musicClips.Array.data[9]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 20119a2f41e6e3a448b3cab905fba511, type: 3}
     - target: {fileID: 5476649410531727341, guid: 93dfe2b79b403d342aeb403b3292c872, type: 3}
       propertyPath: m_Name
       value: audio manger
