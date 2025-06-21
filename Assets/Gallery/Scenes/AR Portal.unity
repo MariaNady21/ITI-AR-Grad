@@ -3729,7 +3729,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1772426262}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 91566018410360763, guid: 18d9497f91077e04db18d58ac314a0e7, type: 3}
       propertyPath: m_Mesh
@@ -3785,7 +3785,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8360654570878949178, guid: 18d9497f91077e04db18d58ac314a0e7, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99975085
+      value: 0.9997509
       objectReference: {fileID: 0}
     - target: {fileID: 8360654570878949178, guid: 18d9497f91077e04db18d58ac314a0e7, type: 3}
       propertyPath: m_LocalRotation.x
@@ -3793,7 +3793,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8360654570878949178, guid: 18d9497f91077e04db18d58ac314a0e7, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.022320447
+      value: 0.02232045
       objectReference: {fileID: 0}
     - target: {fileID: 8360654570878949178, guid: 18d9497f91077e04db18d58ac314a0e7, type: 3}
       propertyPath: m_LocalRotation.z
@@ -4429,7 +4429,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 252601653}
-  - {fileID: 679713409}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1772426263
@@ -4456,4 +4455,5 @@ SceneRoots:
   - {fileID: 647373194}
   - {fileID: 80628619}
   - {fileID: 651132275}
+  - {fileID: 679713408}
   - {fileID: 1772426262}
