@@ -2925,6 +2925,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3123043386796852713, guid: 93dfe2b79b403d342aeb403b3292c872, type: 3}
+      propertyPath: musicClips.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3123043386796852713, guid: 93dfe2b79b403d342aeb403b3292c872, type: 3}
+      propertyPath: 'musicClips.Array.data[6]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 0f3c1d308c84c5c41b84f156f6426274, type: 3}
     - target: {fileID: 5476649410531727341, guid: 93dfe2b79b403d342aeb403b3292c872, type: 3}
       propertyPath: m_Name
       value: audio manger
