@@ -51,7 +51,7 @@ public class BoxManager : MonoBehaviour
             // ✅ تشغيل صوت الانفجار من AudioManager
             if (AudioManager.instance != null)
             {
-                AudioManager.instance.PlaySFX("Explosion");
+                AudioManager.instance.PlaySFX("explosion");
             }
             else
             {
