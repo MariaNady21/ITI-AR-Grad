@@ -139,7 +139,7 @@ public class GameManger : MonoBehaviour
         usedHoles.Add(holeIndex);
         StartCoroutine(ReleaseHoleAfterDelay(holeIndex, 2f));
 
-        if (score >= 30) 
+        if (score >= 10) 
         {
             PlayerWin();
         }

@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 using static UnityEngine.GraphicsBuffer;
 
 public class Vehicle : MonoBehaviour
@@ -23,14 +25,14 @@ public class Vehicle : MonoBehaviour
     private float previousAngle = 0f;
 
     public int remainingLaps = 3; // 
-
+    public TextMeshProUGUI laps;
     void Update()
     {
         if (isGoingTooRed)
         {
             Vector3 dir = (destinationred.position - transform.position).normalized;
 
-            if (dir.magnitude < 1f) // وصلت
+            if (dir.magnitude < 0.001f) // وصلت
             {
                 isGoingTooffice = false;
                 Destroy(gameObject, 1);
@@ -45,7 +47,7 @@ public class Vehicle : MonoBehaviour
         {
             Vector3 dir = (destinationoffice.position - transform.position).normalized;
 
-            if (dir.magnitude < 1f) // وصلت
+            if (dir.magnitude < 0.001f) // وصلت
             {
                 isGoingTooffice = false;
                 Destroy(gameObject,1);
@@ -59,7 +61,7 @@ public class Vehicle : MonoBehaviour
         {
             Vector3 dir = (destinationfactory.position - transform.position).normalized;
 
-            if (dir.magnitude < 1f) // وصلت
+            if (dir.magnitude < 0.001f) // وصلت
             {
                 isGoingTofactory = false;
                 Destroy(gameObject, 1);
@@ -73,7 +75,7 @@ public class Vehicle : MonoBehaviour
         {
             Vector3 dir = (destinationwarehouse.position - transform.position).normalized;
 
-            if (dir.magnitude < 1f) // وصلت
+            if (dir.magnitude < 0.001f) // وصلت
             {
                 isGoingTowarehouse = false;
                 Destroy(gameObject, 1);
@@ -109,7 +111,7 @@ public class Vehicle : MonoBehaviour
                     currentWaypointIndex = 0;
 
                     Debug.Log($"{gameObject.name} finished a lap. Remaining: {remainingLaps}");
-
+                    laps.text = remainingLaps.ToString();
 
 
 
