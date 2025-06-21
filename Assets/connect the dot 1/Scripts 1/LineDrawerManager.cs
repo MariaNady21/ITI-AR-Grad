@@ -1,5 +1,6 @@
-﻿using UnityEngine;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class LineDrawerManager : MonoBehaviour
@@ -223,6 +224,13 @@ public class LineDrawerManager : MonoBehaviour
             if (winPanel != null)
                 winPanel.SetActive(true);
         }
+    }
+    public void ReloScene()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.buildIndex);
+
+
     }
 
 }
