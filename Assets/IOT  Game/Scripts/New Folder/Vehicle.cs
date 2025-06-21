@@ -24,8 +24,9 @@ public class Vehicle : MonoBehaviour
     public float angle = 0f;
     private float previousAngle = 0f;
 
-    public int remainingLaps = 3; // 
+    public int remainingLaps = 3; 
     public TextMeshProUGUI laps;
+    AudioManager audioManager;
     void Update()
     {
         if (isGoingTooRed)
@@ -34,8 +35,9 @@ public class Vehicle : MonoBehaviour
 
             if (dir.magnitude < 0.001f) // وصلت
             {
+                audioManager.PlaySFX("Bonus");
                 isGoingTooffice = false;
-                Destroy(gameObject, 1);
+                Destroy(gameObject, 0.5f);
                 return;
             }
 
@@ -49,6 +51,7 @@ public class Vehicle : MonoBehaviour
 
             if (dir.magnitude < 0.001f) // وصلت
             {
+                audioManager.PlaySFX("Bonus");
                 isGoingTooffice = false;
                 Destroy(gameObject,1);
                 return;
@@ -63,6 +66,7 @@ public class Vehicle : MonoBehaviour
 
             if (dir.magnitude < 0.001f) // وصلت
             {
+                audioManager.PlaySFX("Bonus");
                 isGoingTofactory = false;
                 Destroy(gameObject, 1);
                 return;
@@ -77,8 +81,9 @@ public class Vehicle : MonoBehaviour
 
             if (dir.magnitude < 0.001f) // وصلت
             {
+                audioManager.PlaySFX("Bonus");
                 isGoingTowarehouse = false;
-                Destroy(gameObject, 1);
+                Destroy(gameObject, 0.2f);
                 return;
             }
 
