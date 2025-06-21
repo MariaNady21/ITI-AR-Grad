@@ -27,6 +27,12 @@ public class Vehicle : MonoBehaviour
     public int remainingLaps = 3; 
     public TextMeshProUGUI laps;
     AudioManager audioManager;
+
+    void Start()
+    {
+        audioManager = AudioManager.instance;
+        AudioManager.instance.PlayMusic("IOT-BG");
+    }
     void Update()
     {
         if (isGoingTooRed)
@@ -82,6 +88,7 @@ public class Vehicle : MonoBehaviour
             if (dir.magnitude < 0.001f) // وصلت
             {
                 audioManager.PlaySFX("Bonus");
+
                 isGoingTowarehouse = false;
                 Destroy(gameObject, 0.2f);
                 return;
@@ -114,6 +121,7 @@ public class Vehicle : MonoBehaviour
                 {
                     remainingLaps--;
                     currentWaypointIndex = 0;
+       
 
                     Debug.Log($"{gameObject.name} finished a lap. Remaining: {remainingLaps}");
                     laps.text = remainingLaps.ToString();
@@ -122,6 +130,7 @@ public class Vehicle : MonoBehaviour
 
                     if (remainingLaps <= 0)
                     {
+                        audioManager.PlaySFX("Lose point");
                         isCircling = false;
                         script.score -= 10;
                     }

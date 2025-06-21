@@ -700,7 +700,6 @@ MonoBehaviour:
   - {fileID: 4111618368746722095, guid: ada9362521405bb4590fd31e14d02fca, type: 3}
   - {fileID: 4315903351787176935, guid: ef1221a1293465544aaebe252abb9f53, type: 3}
   - {fileID: 1264818490613314883, guid: 99f2e91499eb16546a1fbd13d2ecec17, type: 3}
-  - {fileID: 5476649410531727341, guid: 93dfe2b79b403d342aeb403b3292c872, type: 3}
   - {fileID: 3239189721455291867, guid: c1c6ac5db4bb5fb4ab6250ea7a200505, type: 3}
   - {fileID: 3172887527326438075, guid: e4352892e9cb96a48b32e0f4fee427b7, type: 3}
   - {fileID: 3455932489750741934, guid: 0b39e32a30f909149bbfc527518f0893, type: 3}
@@ -7605,7 +7604,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 388872345485341149, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
       propertyPath: musicClips.Array.size
-      value: 10
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 388872345485341149, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
       propertyPath: 'musicClips.Array.data[7]'
@@ -7619,6 +7618,22 @@ PrefabInstance:
       propertyPath: 'musicClips.Array.data[9]'
       value: 
       objectReference: {fileID: 8300000, guid: 5894e98f74bc9c949af03091c3bb7194, type: 3}
+    - target: {fileID: 388872345485341149, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
+      propertyPath: 'musicClips.Array.data[10]'
+      value: 
+      objectReference: {fileID: 8300000, guid: d2555964d8c33ce43b73c7c833db2afa, type: 3}
+    - target: {fileID: 388872345485341149, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
+      propertyPath: 'musicClips.Array.data[11]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 0f3c1d308c84c5c41b84f156f6426274, type: 3}
+    - target: {fileID: 388872345485341149, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
+      propertyPath: 'musicClips.Array.data[12]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 20119a2f41e6e3a448b3cab905fba511, type: 3}
+    - target: {fileID: 388872345485341149, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
+      propertyPath: 'musicClips.Array.data[13]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 1ba6323b644d0064ead6baf06dc469cb, type: 3}
     - target: {fileID: 1474666134843450212, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
       propertyPath: m_Name
       value: Sound Manger
