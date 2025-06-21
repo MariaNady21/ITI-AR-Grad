@@ -101,4 +101,9 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene(9);
     }
+
+    public void BackFromGalleryGame()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
