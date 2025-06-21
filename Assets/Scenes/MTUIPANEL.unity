@@ -4018,7 +4018,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1887098376}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3676127731012942545, guid: f0171c472fc66b54c8bce0ab25eb2154, type: 3}
+        m_TargetAssemblyTypeName: ShowPanelOnClick, Assembly-CSharp
+        m_MethodName: ShowPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1887098376
 MonoBehaviour:
   m_ObjectHideFlags: 0
