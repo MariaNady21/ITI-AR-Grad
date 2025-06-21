@@ -1,20 +1,18 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 public class DropReceiver : MonoBehaviour
 {
-    private float dropOffsetX = -0.05f; // ÈÏÇíÉ ÊÑÊíÈ ÇáÚäÇÕÑ ÏÇÎá ÇáÕäÏæŞ
-    private float spacing = 0.05f; // ÇáãÓÇİÉ Èíä ßá ÚäÕÑ æÇáÊÇäí
+    private float dropOffsetX = -0.05f;
+    private float spacing = 0.05f;
 
     void Update()
     {
-        // ãÇæÓ
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             HandleRaycast(ray);
         }
 
-        // ãæÈÇíá
         if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
@@ -33,6 +31,12 @@ public class DropReceiver : MonoBehaviour
                 {
                     GameObject selectedObj = SelectableElement.selectedElement.gameObject;
 
+                    if (selectedObj == null)
+                    {
+                        Debug.LogWarning("ğŸ“› selectedObj null!");
+                        return;
+                    }
+
                     Vector3 targetPos = transform.position;
                     targetPos.y += 0.01f;
                     targetPos.x += dropOffsetX;
@@ -46,6 +50,14 @@ public class DropReceiver : MonoBehaviour
                     {
                         boxManager.AddItem(selectedObj);
                     }
+                    else
+                    {
+                        Debug.LogWarning("ğŸ“› BoxManager Ù…Ø´ Ù„Ø§Ù‚ÙŠÙ‡!");
+                    }
+                }
+                else
+                {
+                    Debug.LogWarning("ğŸ“› Ù…ÙÙŠØ´ selectedElement Ù…ØªØ¹Ù„Ù…!");
                 }
             }
         }

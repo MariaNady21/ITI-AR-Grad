@@ -29,6 +29,12 @@ public class BoxManager : MonoBehaviour
 
     public void AddItem(GameObject item)
     {
+        if (item == null)
+        {
+            Debug.LogWarning("📛 AddItem استقبل null – فيه مشكلة في السحب!");
+            return;
+        }
+
         currentItems++;
         item.SetActive(false);
         collectedItems.Add(item);
@@ -36,21 +42,20 @@ public class BoxManager : MonoBehaviour
 
         if (currentItems >= maxItems)
         {
-            // 🎆 تشغيل تأثير الانفجار
+            // 🎆 تأثير الانفجار
             if (explosionEffectPrefab != null)
             {
                 Instantiate(explosionEffectPrefab, transform.position, Quaternion.identity);
             }
 
-            // 🔊 تشغيل الصوت
-            if (audioSource != null && explosionSound != null)
+            // ✅ تشغيل صوت الانفجار من AudioManager
+            if (AudioManager.instance != null)
             {
-                Debug.Log("🔊 بنحاول نشغل الصوت");
-                audioSource.PlayOneShot(explosionSound);
+                AudioManager.instance.PlaySFX("Explosion");
             }
             else
             {
-                Debug.LogWarning("❗ Explosion sound أو AudioSource مش مربوط!");
+                Debug.LogWarning("❗ AudioManager مش لاقيه! الصوت مش هيتشغل");
             }
 
             foreach (GameObject obj in objectsToHide)
@@ -94,7 +99,6 @@ public class BoxManager : MonoBehaviour
                 FixTextDirection(clone);
             }
 
-            // ✅ نفعل العناصر الإضافية
             if (extraPhoneObject != null)
                 extraPhoneObject.SetActive(true);
 

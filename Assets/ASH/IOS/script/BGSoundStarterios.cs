@@ -2,15 +2,30 @@ using UnityEngine;
 
 public class BGSoundStarterios : MonoBehaviour
 {
+ 
     void Start()
     {
         if (AudioManager.instance != null)
         {
             AudioManager.instance.PlayMusic("bg ios main");
         }
-        else
+    }
+
+    void OnDisable()
+    {
+        if (AudioManager.instance != null)
         {
-            Debug.LogWarning("AudioManager not found in scene!");
+            AudioManager.instance.StopMusic();
         }
     }
+
+    void OnDestroy()
+    {
+        if (AudioManager.instance != null)
+        {
+            AudioManager.instance.StopMusic();
+        }
+    }
+
+
 }

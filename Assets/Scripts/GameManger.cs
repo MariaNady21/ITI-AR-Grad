@@ -1,10 +1,10 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
-
+﻿using System.Collections;
+using System.Collections.Generic;
 using TMPro;
+using UnityEngine;
 using UnityEngine.InputSystem;
-using System.Collections;
-using Vuforia;
+using UnityEngine.SceneManagement;
+
 
 public class GameManger : MonoBehaviour
 {
@@ -16,8 +16,9 @@ public class GameManger : MonoBehaviour
     [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] private GameObject gameOverImage;
     [SerializeField] private GameObject winImage;
+    [SerializeField] public GameObject explosionVFX;
 
-   
+
     //private bool isSpawned = false;
 
 
@@ -138,7 +139,7 @@ public class GameManger : MonoBehaviour
         usedHoles.Add(holeIndex);
         StartCoroutine(ReleaseHoleAfterDelay(holeIndex, 2f));
 
-        if (score >= 30) 
+        if (score >= 10) 
         {
             PlayerWin();
         }
@@ -196,5 +197,15 @@ public class GameManger : MonoBehaviour
         scoreText.gameObject.SetActive(false);
     }
 
-    
+    public void ReloadScene()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.buildIndex);
+
+        AudioManager.instance.PlayMusic("BackGround");
+    }
+
+
+
+
 }

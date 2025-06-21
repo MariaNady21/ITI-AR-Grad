@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class AudioManagerLoader : MonoBehaviour
 {
@@ -7,7 +7,10 @@ public class AudioManagerLoader : MonoBehaviour
         if (AudioManager.instance == null)
         {
             GameObject prefab = Resources.Load<GameObject>("Sound Manger");
-            Instantiate(prefab);
+            if (prefab != null)
+            {
+                Instantiate(prefab);
+            }
         }
     }
 }

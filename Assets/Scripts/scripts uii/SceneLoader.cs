@@ -5,37 +5,40 @@ public class SceneLoader : MonoBehaviour
 {
     //---------------------------------------------
     // Function to Load Scene 0
-    public void LoadSceneIOSGame()
+    public void LoadSceneIOSui()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(9);
     }
 
     //---------------------------------------------
     // Function to Load Scene 1
-    public void LoadSceneIOSInfo()
-    {
-        SceneManager.LoadScene(6);
-    }
-
-    public void BackFromIOSGame()
+    public void LoadSceneIOSgame()
     {
         SceneManager.LoadScene(1);
     }
 
+    public void BackFromGame()
+    {
+        SceneManager.LoadScene(0);
+    }
+    public void BackFromIOSGame()
+    {
+        SceneManager.LoadScene(0);
+    }
 
 
     //---------------------------------------------
     // Function to Load Scene 2
     public void LoadSceneIOTGame()
     {
-        SceneManager.LoadScene(8);
+        SceneManager.LoadScene(2);
     }
 
     //---------------------------------------------
     // Function to Load Scene 3
-    public void LoadSceneIOTInfo()
+    public void LoadScenegallery()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(5);
     }
 
 
@@ -43,14 +46,14 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene(2);
     }
-
+   
 
 
     //---------------------------------------------
     // Function to Load Scene 4
     public void LoadSceneXRGame()
     {
-        SceneManager.LoadScene(7);
+        SceneManager.LoadScene(3);
     }
     public void BackFromXRGame()
     {
@@ -71,14 +74,14 @@ public class SceneLoader : MonoBehaviour
     // Function to Load Scene 6
     public void LoadSceneEmbeddedGame()
     {
-        SceneManager.LoadScene(9);
+        SceneManager.LoadScene(4);
     }
 
     //---------------------------------------------
-    // Function to Load Scene 7
-    public void LoadSceneEmbeddedInfo()
+    // Function to Load Scene 0
+    public void LoadSceneEmbeddedui()
     {
-        SceneManager.LoadScene(7);
+        SceneManager.LoadScene(55);
     }
     public void BackFromEmbeddedGame()
     {

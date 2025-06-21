@@ -8,7 +8,10 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioSource sfxSource;
     public AudioClip[] musicClips;
 
-    private bool isMusicMuted = false; // متغير لمتابعة حالة الميوت
+    private bool isMusicMuted = false;
+
+    // ✅ افتراضيًا مفيش تشغيل تلقائي للموسيقى
+    public bool disableAutoMusic = true;
 
     void Awake()
     {
@@ -37,7 +40,11 @@ public class AudioManager : MonoBehaviour
             sfxSource.loop = false;
         }
 
-        PlayMusic("BackGround");
+        // ❌ مفيش تشغيل تلقائي تاني
+        // if (!disableAutoMusic)
+        // {
+        //     PlayMusic("BackGround");
+        // }
     }
 
     public void PlaySFX(string sfxName)
@@ -96,7 +103,6 @@ public class AudioManager : MonoBehaviour
         backgroundMusic.volume = volume;
     }
 
-    // ✅ الدالة الجديدة لتبديل تشغيل/إيقاف الموسيقى
     public void ToggleMusic()
     {
         if (isMusicMuted)
@@ -109,5 +115,10 @@ public class AudioManager : MonoBehaviour
         }
 
         isMusicMuted = !isMusicMuted;
+    }
+
+    public AudioSource GetSFXSource()
+    {
+        return sfxSource;
     }
 }
