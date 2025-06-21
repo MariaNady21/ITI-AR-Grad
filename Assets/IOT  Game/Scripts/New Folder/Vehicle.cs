@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 using static UnityEngine.GraphicsBuffer;
 
 public class Vehicle : MonoBehaviour
@@ -22,18 +24,20 @@ public class Vehicle : MonoBehaviour
     public float angle = 0f;
     private float previousAngle = 0f;
 
-    public int remainingLaps = 3; // 
-
+    public int remainingLaps = 3; 
+    public TextMeshProUGUI laps;
+    AudioManager audioManager;
     void Update()
     {
         if (isGoingTooRed)
         {
             Vector3 dir = (destinationred.position - transform.position).normalized;
 
-            if (dir.magnitude < 1f) // وصلت
+            if (dir.magnitude < 0.001f) // وصلت
             {
+                audioManager.PlaySFX("Bonus");
                 isGoingTooffice = false;
-                Destroy(gameObject, 1);
+                Destroy(gameObject, 0.5f);
                 return;
             }
 
@@ -45,8 +49,9 @@ public class Vehicle : MonoBehaviour
         {
             Vector3 dir = (destinationoffice.position - transform.position).normalized;
 
-            if (dir.magnitude < 1f) // وصلت
+            if (dir.magnitude < 0.001f) // وصلت
             {
+                audioManager.PlaySFX("Bonus");
                 isGoingTooffice = false;
                 Destroy(gameObject,1);
                 return;
@@ -59,8 +64,9 @@ public class Vehicle : MonoBehaviour
         {
             Vector3 dir = (destinationfactory.position - transform.position).normalized;
 
-            if (dir.magnitude < 1f) // وصلت
+            if (dir.magnitude < 0.001f) // وصلت
             {
+                audioManager.PlaySFX("Bonus");
                 isGoingTofactory = false;
                 Destroy(gameObject, 1);
                 return;
@@ -73,10 +79,11 @@ public class Vehicle : MonoBehaviour
         {
             Vector3 dir = (destinationwarehouse.position - transform.position).normalized;
 
-            if (dir.magnitude < 1f) // وصلت
+            if (dir.magnitude < 0.001f) // وصلت
             {
+                audioManager.PlaySFX("Bonus");
                 isGoingTowarehouse = false;
-                Destroy(gameObject, 1);
+                Destroy(gameObject, 0.2f);
                 return;
             }
 
@@ -109,7 +116,7 @@ public class Vehicle : MonoBehaviour
                     currentWaypointIndex = 0;
 
                     Debug.Log($"{gameObject.name} finished a lap. Remaining: {remainingLaps}");
-
+                    laps.text = remainingLaps.ToString();
 
 
 
