@@ -28,15 +28,18 @@ public class GameManger : MonoBehaviour
 
     private Coroutine moleSpawnRoutine;
     AudioManager audioManager;
-    void Awake()
-    {
-        
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
-        
-    }
+
     void Start()
     {
-        Debug.Log("GameManager is Active: " + gameObject.activeSelf);
+        if (AudioManager.instance != null)
+        {
+            audioManager = AudioManager.instance;
+            AudioManager.instance.PlayMusic("BackGround");
+        }
+        else
+        {
+            Debug.LogWarning("AudioManager not found in scene!");
+        }
 
         SpawnMole(); 
         SetSpawnPoints(spawnPoints); 
