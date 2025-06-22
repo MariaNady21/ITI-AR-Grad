@@ -20,4 +20,17 @@ public class LoadGameSceneFromInfo : MonoBehaviour
         SceneEntryMode.isInfoMode = true;
         SceneManager.LoadScene(1);
     }
+
+    public void LoadSceneIOT()
+    {
+        SceneEntryMode.isInfoMode = true;
+        SceneManager.LoadScene(2);
+    }
+
+    public void LoadSceneEmbedded()
+    {
+        SceneEntryMode.isInfoMode = true;
+        SceneManager.LoadScene(4);
+    }
+
 }
