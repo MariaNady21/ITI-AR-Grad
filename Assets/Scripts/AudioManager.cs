@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
@@ -120,5 +121,10 @@ public class AudioManager : MonoBehaviour
     public AudioSource GetSFXSource()
     {
         return sfxSource;
+    }
+
+    internal void PlaySFX(AudioClip clickSound)
+    {
+        throw new NotImplementedException();
     }
 }
