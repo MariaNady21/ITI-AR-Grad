@@ -16,6 +16,15 @@ TagManager:
   - redgate
   - node
   - redvane
+  - image
+  - text
+  - input
+  - button
+  - Audio
+  - blue
+  - red
+  - yellow
+  - green
   layers:
   - Default
   - TransparentFX
