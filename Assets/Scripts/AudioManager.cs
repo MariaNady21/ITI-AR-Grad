@@ -68,8 +68,6 @@ public class AudioManager : MonoBehaviour
 
     public void PlayMusic(string musicName)
     {
-        if (disableAutoMusic) return; // Don't play if disabled!
-
         AudioClip clipToPlay = null;
 
         foreach (AudioClip clip in musicClips)
@@ -93,10 +91,7 @@ public class AudioManager : MonoBehaviour
                 backgroundMusic.Play();
             }
         }
-        Debug.Log("PlayMusic called with: " + musicName);
-
     }
-
 
     public void StopMusic()
     {
