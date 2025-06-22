@@ -240,6 +240,7 @@ public class LineDrawerManager : MonoBehaviour
             Debug.Log("🎉 YOU WIN! All node pairs connected.");
             if (AudioManager.instance != null)
             {
+                AudioManager.instance.StopMusic();
                 AudioManager.instance.PlaySFX("ConectTheDotWin");
                 if (AudioManager.instance != null)
                 {
