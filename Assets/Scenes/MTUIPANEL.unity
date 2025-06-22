@@ -241,6 +241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a4be90a08c53be41aaab2035aa12529, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickSoundName: 
 --- !u!114 &25361346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,6 +254,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 947d129b2ccf5f4419e13475a1b78359, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickSoundName: 
+--- !u!1 &43482793
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 43482795}
+  - component: {fileID: 43482794}
+  m_Layer: 0
+  m_Name: SceneFlagResetter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &43482794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43482793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ab7c2d71e9e954bba680634f718906, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &43482795
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43482793}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.10186018, y: 0.27199996, z: 1.4643047}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &105654909
 GameObject:
   m_ObjectHideFlags: 0
@@ -4375,9 +4421,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 25361346}
-        m_TargetAssemblyTypeName: LoadGameSceneFromPlay, Assembly-CSharp
-        m_MethodName: LoadSceneIOS
+      - m_Target: {fileID: 1749303654}
+        m_TargetAssemblyTypeName: SceneDelayLoader, Assembly-CSharp
+        m_MethodName: OnButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6076,3 +6122,4 @@ SceneRoots:
   - {fileID: 25361344}
   - {fileID: 1749303655}
   - {fileID: 194151499}
+  - {fileID: 43482795}
