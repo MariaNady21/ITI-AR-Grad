@@ -19,9 +19,19 @@ public class LineDrawerManager : MonoBehaviour
     private Dictionary<GameObject, string> cellOwners = new Dictionary<GameObject, string>();
 
     private HashSet<string> allNodeIDs = new HashSet<string>();
-
+    AudioManager audioManager;
     void Start()
     {
+        // ✅ تشغيل صوت الخلفية عند بدء اللعبة
+        if (AudioManager.instance != null)
+        {
+            AudioManager.instance.PlayMusic("bg emb");
+        }
+        else
+        {
+            Debug.LogWarning("❗ AudioManager مش لاقيه! الصوت الخلفي مش هيتشغل");
+        }
+
         Node[] nodes = FindObjectsOfType<Node>();
         foreach (Node node in nodes)
         {
@@ -30,6 +40,8 @@ public class LineDrawerManager : MonoBehaviour
 
         Debug.Log("Total node pairs to match: " + allNodeIDs.Count);
     }
+
+
     void Update()
     {
 
@@ -119,7 +131,12 @@ public class LineDrawerManager : MonoBehaviour
 
                 currentNode = hitNode;
                 Debug.Log("Connection Complete!");
-                if (!completedIDs.Contains(currentID))
+                if (AudioManager.instance != null)
+                {
+                    AudioManager.instance.PlaySFX("connecteddotsound");
+                }
+               
+               if (!completedIDs.Contains(currentID))
                 {
                     completedIDs.Add(currentID);
                     Debug.Log("Connection permanently locked for: " + currentID);
@@ -220,7 +237,19 @@ public class LineDrawerManager : MonoBehaviour
         if (completedIDs.Count == allNodeIDs.Count)
         {
             Debug.Log("🎉 YOU WIN! All node pairs connected.");
+            if (AudioManager.instance != null)
+            {
+                AudioManager.instance.PlaySFX("ConectTheDotWin");
+                if (AudioManager.instance != null)
+                {
+                    AudioManager.instance.StopMusic();
+                }
+                else
+                {
+                    Debug.LogWarning("❗ AudioManager مش موجود – مش هنقدر نوقف الموسيقى");
+                }
 
+            }
             if (winPanel != null)
                 winPanel.SetActive(true);
         }
@@ -232,5 +261,7 @@ public class LineDrawerManager : MonoBehaviour
 
 
     }
+   
+ 
 
 }

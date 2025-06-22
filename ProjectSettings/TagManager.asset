@@ -16,14 +16,20 @@ TagManager:
   - redgate
   - node
   - redvane
+  - winButton
+  - text
+  - image
+  - input
+  - button
+  - Audio
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Grid
   - Water
   - UI
-  - 
+  - Node
   - 
   - 
   - 
