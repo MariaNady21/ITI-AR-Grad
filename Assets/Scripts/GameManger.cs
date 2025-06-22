@@ -202,11 +202,21 @@ public class GameManger : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.buildIndex);
 
-        AudioManager.instance.PlayMusic("BackGround");
+        if (!AudioManager.instance.GetComponent<AudioSource>().isPlaying)
+        {
+            AudioManager.instance.PlayMusic("BackGround");
+        }
+    }
+    public void ToggleMusic()
+    {
+        if (AudioManager.instance != null)
+        {
+            AudioManager.instance.ToggleMusic();
+        }
     }
 
 
-   
+
 
 
 }
