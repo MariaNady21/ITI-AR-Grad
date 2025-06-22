@@ -28,4 +28,17 @@ public class LoadGameSceneFromInfo : MonoBehaviour
         yield return new WaitForSeconds(0.5f); //  √ŒÌ— »”Ìÿ ﬁ»· «·‰ﬁ· ··„‘Âœ
         SceneManager.LoadScene(sceneIndex);
     }
+
+    public void LoadSceneIOT()
+    {
+        SceneEntryMode.isInfoMode = true;
+        SceneManager.LoadScene(2);
+    }
+
+    public void LoadSceneEmbedded()
+    {
+        SceneEntryMode.isInfoMode = true;
+        SceneManager.LoadScene(4);
+    }
+
 }

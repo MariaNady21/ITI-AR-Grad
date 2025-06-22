@@ -25,11 +25,12 @@ public class LineDrawerManager : MonoBehaviour
         // ✅ تشغيل صوت الخلفية عند بدء اللعبة
         if (AudioManager.instance != null)
         {
+            audioManager = AudioManager.instance;
             AudioManager.instance.PlayMusic("bg emb");
         }
         else
         {
-            Debug.LogWarning("❗ AudioManager مش لاقيه! الصوت الخلفي مش هيتشغل");
+            Debug.LogWarning("AudioManager not found in scene!");
         }
 
         Node[] nodes = FindObjectsOfType<Node>();
@@ -239,6 +240,7 @@ public class LineDrawerManager : MonoBehaviour
             Debug.Log("🎉 YOU WIN! All node pairs connected.");
             if (AudioManager.instance != null)
             {
+                AudioManager.instance.StopMusic();
                 AudioManager.instance.PlaySFX("ConectTheDotWin");
                 if (AudioManager.instance != null)
                 {
@@ -254,14 +256,23 @@ public class LineDrawerManager : MonoBehaviour
                 winPanel.SetActive(true);
         }
     }
-    public void ReloScene()
+    public void ReloadScene()
     {
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.buildIndex);
 
-
+        if (!AudioManager.instance.GetComponent<AudioSource>().isPlaying)
+        {
+            AudioManager.instance.PlayMusic("bg emb");
+        }
     }
-   
- 
+    public void ToggleMusic()
+    {
+        if (AudioManager.instance != null)
+        {
+            AudioManager.instance.ToggleMusic();
+        }
+    }
+
 
 }

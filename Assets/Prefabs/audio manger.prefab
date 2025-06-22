@@ -188,6 +188,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 20119a2f41e6e3a448b3cab905fba511, type: 3}
   - {fileID: 8300000, guid: 1ba6323b644d0064ead6baf06dc469cb, type: 3}
   - {fileID: 8300000, guid: d2555964d8c33ce43b73c7c833db2afa, type: 3}
+  - {fileID: 8300000, guid: 28b10b94dc676dd4fb4f0bdfe653554d, type: 3}
+  - {fileID: 8300000, guid: 1168a11afe99cbc4180a902d106d9154, type: 3}
+  - {fileID: 8300000, guid: 83fbecd5440d95f4e8b223e1af781234, type: 3}
   disableAutoMusic: 1
 --- !u!1 &6551422305847332684
 GameObject:

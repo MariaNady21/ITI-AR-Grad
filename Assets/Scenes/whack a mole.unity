@@ -530,8 +530,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3342086691132429172}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+      - m_Target: {fileID: 740006042}
+        m_TargetAssemblyTypeName: GameManger, Assembly-CSharp
         m_MethodName: ToggleMusic
         m_Mode: 1
         m_Arguments:
@@ -637,7 +637,7 @@ Transform:
   m_GameObject: {fileID: 537220854}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.366, y: -0.417, z: 1.792}
+  m_LocalPosition: {x: 0.366, y: -0.417, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -876,12 +876,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 740006041}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb98d51c655597d46ba4bc7646c8958b, type: 3}
+  m_Script: {fileID: 11500000, guid: acb38b597ad26ac45bf0cc40df8ea152, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tabs:
-  - {fileID: 1675985096}
-  - {fileID: 537220854}
+  audioManagerPrefab: {fileID: 5476649410531727341, guid: 93dfe2b79b403d342aeb403b3292c872, type: 3}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -6468,7 +6466,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1547007507}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.086000085}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -6478,7 +6476,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.366, y: 0.43}
+  m_AnchoredPosition: {x: -0.333, y: 0.43}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1547007509
@@ -6736,7 +6734,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f36b8dc00bfd7654784af61d1297c672, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f36b8dc00bfd7654784af61d1297c672, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7554,118 +7552,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3342086691132429172 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 388872345485341149, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
-  m_PrefabInstance: {fileID: 8478904729405994045}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5de5f8bb71e21e45a2d9f4ce1736692, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1001 &8478904729405994045
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 388872345485341149, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
-      propertyPath: musicClips.Array.size
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 388872345485341149, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
-      propertyPath: 'musicClips.Array.data[7]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 775babc638cf5e748b5e3235d42aa74b, type: 3}
-    - target: {fileID: 388872345485341149, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
-      propertyPath: 'musicClips.Array.data[8]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 1bc5312618cb64943a675c9acb557588, type: 3}
-    - target: {fileID: 388872345485341149, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
-      propertyPath: 'musicClips.Array.data[9]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 5894e98f74bc9c949af03091c3bb7194, type: 3}
-    - target: {fileID: 388872345485341149, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
-      propertyPath: 'musicClips.Array.data[10]'
-      value: 
-      objectReference: {fileID: 8300000, guid: d2555964d8c33ce43b73c7c833db2afa, type: 3}
-    - target: {fileID: 388872345485341149, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
-      propertyPath: 'musicClips.Array.data[11]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 0f3c1d308c84c5c41b84f156f6426274, type: 3}
-    - target: {fileID: 388872345485341149, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
-      propertyPath: 'musicClips.Array.data[12]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 20119a2f41e6e3a448b3cab905fba511, type: 3}
-    - target: {fileID: 388872345485341149, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
-      propertyPath: 'musicClips.Array.data[13]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 1ba6323b644d0064ead6baf06dc469cb, type: 3}
-    - target: {fileID: 388872345485341149, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
-      propertyPath: 'musicClips.Array.data[14]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 28b10b94dc676dd4fb4f0bdfe653554d, type: 3}
-    - target: {fileID: 388872345485341149, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
-      propertyPath: 'musicClips.Array.data[15]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 1ba6323b644d0064ead6baf06dc469cb, type: 3}
-    - target: {fileID: 1474666134843450212, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
-      propertyPath: m_Name
-      value: Sound Manger
-      objectReference: {fileID: 0}
-    - target: {fileID: 1474666134843450212, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8418708518784609840, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8418708518784609840, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.98
-      objectReference: {fileID: 0}
-    - target: {fileID: 8418708518784609840, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -11.68
-      objectReference: {fileID: 0}
-    - target: {fileID: 8418708518784609840, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8418708518784609840, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8418708518784609840, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8418708518784609840, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8418708518784609840, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8418708518784609840, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8418708518784609840, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -7675,7 +7561,6 @@ SceneRoots:
   - {fileID: 1983258802}
   - {fileID: 740006043}
   - {fileID: 1675985094}
-  - {fileID: 8478904729405994045}
   - {fileID: 1993426690}
   - {fileID: 520812860}
   - {fileID: 537220855}
