@@ -15,6 +15,7 @@ public class AudioManager : MonoBehaviour
 
     void Awake()
     {
+        Debug.Log("AudioManager instance created");
         if (instance == null)
         {
             instance = this;
@@ -33,18 +34,14 @@ public class AudioManager : MonoBehaviour
             backgroundMusic = gameObject.AddComponent<AudioSource>();
             backgroundMusic.loop = true;
         }
+        isMusicMuted = false;
+        PlayerPrefs.SetInt("musicMuted", 0);
 
         if (sfxSource == null)
         {
             sfxSource = gameObject.AddComponent<AudioSource>();
             sfxSource.loop = false;
         }
-
-        // ❌ مفيش تشغيل تلقائي تاني
-        // if (!disableAutoMusic)
-        // {
-        //     PlayMusic("BackGround");
-        // }
     }
 
     public void PlaySFX(string sfxName)
@@ -105,16 +102,20 @@ public class AudioManager : MonoBehaviour
 
     public void ToggleMusic()
     {
-        if (isMusicMuted)
+        if (backgroundMusic == null) return;
+
+        if (backgroundMusic.isPlaying)
         {
-            backgroundMusic.Play();
+            backgroundMusic.Pause();
+            isMusicMuted = true;
         }
         else
         {
-            backgroundMusic.Pause();
+            backgroundMusic.Play();
+            isMusicMuted = false;
         }
 
-        isMusicMuted = !isMusicMuted;
+        PlayerPrefs.SetInt("musicMuted", isMusicMuted ? 1 : 0);
     }
 
     public AudioSource GetSFXSource()
