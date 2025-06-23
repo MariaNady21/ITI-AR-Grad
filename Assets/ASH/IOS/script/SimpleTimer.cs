@@ -64,7 +64,7 @@ public class SimpleTimer : MonoBehaviour
             winImage.SetActive(true);
 
         if (AudioManager.instance != null)
-            AudioManager.instance.PlaySFX("I won");
+            AudioManager.instance.PlaySFX("I win");
 
         StopBGIOSSound();
         HideOthers();
