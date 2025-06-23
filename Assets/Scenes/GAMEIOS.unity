@@ -844,7 +844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24e05d22c11fb5549ba6d614100d6e89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 30
+  timeRemaining: 60
   timerText: {fileID: 237029775}
   winImage: {fileID: 1910350828}
   loseImage: {fileID: 575110463}
