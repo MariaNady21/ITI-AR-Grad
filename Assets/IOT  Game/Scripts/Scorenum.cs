@@ -37,8 +37,8 @@ public class Scorenum : MonoBehaviour
         }
         else if (score < 40 && Vehicle.counter == 4)
         {
-            audioManager.PlaySFX("ConectTheDotWin");
-            audioManager.StopMusic();
+          //  audioManager.PlaySFX("ConectTheDotWin");
+           // audioManager.StopMusic();
             losepanel.SetActive(true);
             panelShown = true;
         }

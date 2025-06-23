@@ -2833,7 +2833,7 @@ MonoBehaviour:
   textscore: {fileID: 1555196600}
   winpanel: {fileID: 494412404}
   losepanel: {fileID: 2072853337}
-  panelShown: 0
+  panelShown: 1
 --- !u!1 &1133294868
 GameObject:
   m_ObjectHideFlags: 0
