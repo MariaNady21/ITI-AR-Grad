@@ -20,10 +20,19 @@ public class Vehicle : MonoBehaviour
     private bool isGoingTooffice = false;
     private bool isGoingTofactory = false;
     private bool isGoingTowarehouse = false;
-  
+
+    
+    public static int counter = 0;
+    private bool hasFinished = false;
+    public bool hasScored = false;
+
+
+    // public bool panelShown = false;
+
+
     private bool isCircling = true;
     public float angle = 0f;
-    private float previousAngle = 0f;
+    
 
     public int remainingLaps = 3; 
     public TextMeshProUGUI laps;
@@ -40,13 +49,15 @@ public class Vehicle : MonoBehaviour
         {
             Vector3 dir = (destinationred.position - transform.position).normalized;
 
-            if (dir.magnitude < 0.001f) // وصلت
+           /* if (dir.magnitude < 0.95f) // وصلت
             {
                 audioManager.PlaySFX("Bonus");
                 isGoingTooffice = false;
-                Destroy(gameObject, 0.5f);
+                Destroy(gameObject, 0.001f);
+                counter++;
+                Debug.Log("counter is " + counter);
                 return;
-            }
+            }*/
 
             transform.position += dir * speed * Time.deltaTime;
             transform.rotation = Quaternion.LookRotation(dir);
@@ -56,13 +67,15 @@ public class Vehicle : MonoBehaviour
         {
             Vector3 dir = (destinationoffice.position - transform.position).normalized;
 
-            if (dir.magnitude < 0.001f) // وصلت
+           /* if (dir.magnitude < 0.95f) // وصلت
             {
                 audioManager.PlaySFX("Bonus");
                 isGoingTooffice = false;
-                Destroy(gameObject,1);
+                Destroy(gameObject,0.001f);
+                counter++;
+                Debug.Log("counter is " + counter);
                 return;
-            }
+            }*/
 
             transform.position += dir * speed * Time.deltaTime;
             transform.rotation = Quaternion.LookRotation(dir);
@@ -71,13 +84,15 @@ public class Vehicle : MonoBehaviour
         {
             Vector3 dir = (destinationfactory.position - transform.position).normalized;
 
-            if (dir.magnitude < 0.001f) // وصلت
+         /*   if (dir.magnitude < 0.95f) // وصلت
             {
                 audioManager.PlaySFX("Bonus");
                 isGoingTofactory = false;
-                Destroy(gameObject, 1);
+                Destroy(gameObject, 0.001f);
+                counter++;
+                Debug.Log("counter is " + counter);
                 return;
-            }
+            }*/
 
             transform.position += dir * speed * Time.deltaTime;
             transform.rotation = Quaternion.LookRotation(dir);
@@ -86,14 +101,16 @@ public class Vehicle : MonoBehaviour
         {
             Vector3 dir = (destinationwarehouse.position - transform.position).normalized;
 
-            if (dir.magnitude < 0.001f) // وصلت
+          /*  if (dir.magnitude < 0.95f) // وصلت
             {
                 audioManager.PlaySFX("Bonus");
 
                 isGoingTowarehouse = false;
-                Destroy(gameObject, 0.2f);
+                Destroy(gameObject, 0.001f);
+                counter++;
+                Debug.Log("counter is " + counter);
                 return;
-            }
+            }*/
 
             transform.position += dir * speed * Time.deltaTime;
             transform.rotation = Quaternion.LookRotation(dir);
@@ -127,20 +144,42 @@ public class Vehicle : MonoBehaviour
                     Debug.Log($"{gameObject.name} finished a lap. Remaining: {remainingLaps}");
                     laps.text = remainingLaps.ToString();
 
-
-
-                    if (remainingLaps <= 0)
+                    if (remainingLaps <= 0 && !hasFinished)
                     {
-                        audioManager.PlaySFX("Lose point");
+                        hasFinished = true;
                         isCircling = false;
+                        counter++;
+                        audioManager.PlaySFX("Lose point");
+                        Debug.Log("counter is " + counter);
                         script.score -= 10;
+                        Destroy(gameObject, 0.001f);
                     }
+
                 }
             }
-
-
         }
+
+      //  wingame();
+
     }
+
+
+  /*  public void wingame()
+    {
+        if (panelShown) return; // Prevent showing again
+
+        if (script.score >= 40 && counter == 4)
+        {
+            winpanel.SetActive(true);
+            panelShown = true;
+        }
+        else if (script.score < 40 && counter == 4)
+        {
+            losepanel.SetActive(true);
+            panelShown = true;
+        }
+    }*/
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -181,15 +220,78 @@ public class Vehicle : MonoBehaviour
                 isCircling = false;
             }
         }
+
+        if (other.CompareTag("red"))
+        {
+            if (!hasFinished)
+            {
+                audioManager.PlaySFX("Bonus");
+                isGoingTooffice = false;
+                hasFinished = true;
+                counter++;
+                Debug.Log("counter is " + counter);
+                Destroy(gameObject, 0.001f);
+            }
+            return;
+        }
+        if (other.CompareTag("blue"))// office
+        {
+            if (!hasFinished)
+            {
+                audioManager.PlaySFX("Bonus");
+                isGoingTooffice = false;
+                hasFinished = true;
+                counter++;
+                Debug.Log("counter is " + counter);
+                Destroy(gameObject, 0.001f);
+            }
+            return;
+        }
+        if (other.CompareTag("yellow"))
+        {
+            if (!hasFinished)
+            {
+                audioManager.PlaySFX("Bonus");
+                isGoingTooffice = false;
+                hasFinished = true;
+                counter++;
+                Debug.Log("counter is " + counter);
+                Destroy(gameObject, 0.001f);
+            }
+            return;
+        }
+        if (other.CompareTag("green"))
+        {
+            if (!hasFinished)
+            {
+                audioManager.PlaySFX("Bonus");
+                isGoingTooffice = false;
+                hasFinished = true;
+                counter++;
+                Debug.Log("counter is " + counter);
+                Destroy(gameObject, 0.001f);
+            }
+            return;
+        }
     }
 
 
-    public void ReloaScene()
+    public void ReloadScene()
     {
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.buildIndex);
 
-        
+        if (!AudioManager.instance.GetComponent<AudioSource>().isPlaying)
+        {
+            AudioManager.instance.PlayMusic("IOT-BG");
+        }
+    }
+    public void ToggleMusic()
+    {
+        if (AudioManager.instance != null)
+        {
+            AudioManager.instance.ToggleMusic();
+        }
     }
 
 

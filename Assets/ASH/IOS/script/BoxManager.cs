@@ -16,8 +16,6 @@ public class BoxManager : MonoBehaviour
 
     [Header("Explosion Effect")]
     public GameObject explosionEffectPrefab;
-    public AudioClip explosionSound;
-    public AudioSource audioSource;
 
     [Header("عناصر إضافية بعد البناء")]
     public GameObject extraPhoneObject;
@@ -48,7 +46,7 @@ public class BoxManager : MonoBehaviour
                 Instantiate(explosionEffectPrefab, transform.position, Quaternion.identity);
             }
 
-            // ✅ تشغيل صوت الانفجار من AudioManager
+            // ✅ تشغيل صوت الانفجار من AudioManager فقط
             if (AudioManager.instance != null)
             {
                 AudioManager.instance.PlaySFX("explosion");
@@ -83,10 +81,10 @@ public class BoxManager : MonoBehaviour
                         clone.transform.localScale = new Vector3(0.3f, 0.5f, 0.2f);
                         break;
                     case "text":
-                        clone.transform.localScale = new Vector3(0.2f, 0.3f, 0.2f);
+                        clone.transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
                         break;
                     case "image":
-                        clone.transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
+                        clone.transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
                         break;
                     case "input":
                         clone.transform.localScale = new Vector3(0.3f, 0.4f, 0.2f);

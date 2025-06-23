@@ -1,26 +1,35 @@
-using UnityEngine;
+Ôªøusing UnityEngine;
 
 public class GameSceneController : MonoBehaviour
 {
-    public GameObject infoPanel;     // «·»«‰· «··Ì ÌŸÂ—
-    public GameObject[] gameElementsToHide;  // «·⁄‰«’— «··Ì   Œ›Ì ·Ê œŒ·‰« „‰ Info
+    public GameObject infoPanel;
+    public GameObject[] gameElementsToHide;
+
+    public AudioSource audioSource;
+    public AudioClip infoClip;
+    public AudioClip gameClip;
 
     void Start()
     {
         if (SceneEntryMode.isInfoMode)
         {
-            // Ã«ÌÌ‰ „‰ “—«— Info
             infoPanel.SetActive(true);
 
             foreach (GameObject obj in gameElementsToHide)
-            {
                 obj.SetActive(false);
-            }
+
+            // √ä√É√ü√è √Ö√§ √á√°√ï√¶√ä √à√≠√î√ä√õ√° √à√î√ü√° √§√ô√≠√ù
+            audioSource.Stop();
+            audioSource.clip = infoClip;
+            audioSource.Play();
         }
         else
         {
-            // Ã«ÌÌ‰ „‰ “—«— Play
             infoPanel.SetActive(false);
+
+            audioSource.Stop();
+            audioSource.clip = gameClip;
+            audioSource.Play();
         }
     }
 }

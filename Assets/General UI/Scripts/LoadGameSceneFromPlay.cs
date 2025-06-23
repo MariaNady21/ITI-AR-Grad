@@ -1,24 +1,32 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class LoadGameSceneFromPlay : MonoBehaviour
 {
+    public string clickSoundName;
+
     public void LoadSceneGame()
     {
-        SceneEntryMode.isInfoMode = false;
-        SceneManager.LoadScene(3);
+        StartCoroutine(PlaySoundAndLoadScene(3));
     }
 
     public void LoadSceneGallery()
     {
-        SceneEntryMode.isInfoMode = false;
-        SceneManager.LoadScene(5);
+        StartCoroutine(PlaySoundAndLoadScene(5));
     }
 
     public void LoadSceneIOS()
     {
+        StartCoroutine(PlaySoundAndLoadScene(1));
+    }
+
+    IEnumerator PlaySoundAndLoadScene(int sceneIndex)
+    {
         SceneEntryMode.isInfoMode = false;
-        SceneManager.LoadScene(1);
+        AudioManager.instance.PlaySFX(clickSoundName);
+        yield return new WaitForSeconds(0.5f); 
+        SceneManager.LoadScene(sceneIndex);
     }
 
     public void LoadSceneIOT()
@@ -34,3 +42,4 @@ public class LoadGameSceneFromPlay : MonoBehaviour
     }
 
 }
+

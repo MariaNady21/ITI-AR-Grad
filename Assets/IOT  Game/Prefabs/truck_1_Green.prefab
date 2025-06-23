@@ -338,7 +338,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8983039790890230899}
-  - component: {fileID: 5847813280424231272}
   m_Layer: 0
   m_Name: Front_Left_Wheel
   m_TagString: Untagged
@@ -361,45 +360,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8553642367490503525}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!146 &5847813280424231272
-WheelCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2118639799487057259}
-  serializedVersion: 2
-  m_Center: {x: 0, y: 0.15, z: 0}
-  m_Radius: 0.54
-  m_SuspensionSpring:
-    spring: 35000
-    damper: 4500
-    targetPosition: 0.5
-  m_SuspensionDistance: 0.3
-  m_ForceAppPointDistance: 0
-  m_Mass: 60
-  m_WheelDampingRate: 0.25
-  m_ForwardFriction:
-    m_ExtremumSlip: 0.4
-    m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.8
-    m_AsymptoteValue: 0.5
-    m_Stiffness: 1
-  m_SidewaysFriction:
-    m_ExtremumSlip: 0.2
-    m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.5
-    m_AsymptoteValue: 0.75
-    m_Stiffness: 1
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_Enabled: 1
-  m_ProvidesContacts: 0
 --- !u!1 &2379780195102297734
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,7 +526,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 499016347844901325}
-  - component: {fileID: 5991236855107926250}
   m_Layer: 0
   m_Name: Front_Right_Wheel
   m_TagString: Untagged
@@ -589,45 +548,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8553642367490503525}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!146 &5991236855107926250
-WheelCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2423104914654704879}
-  serializedVersion: 2
-  m_Center: {x: 0, y: 0.15, z: 0}
-  m_Radius: 0.54
-  m_SuspensionSpring:
-    spring: 35000
-    damper: 4500
-    targetPosition: 0.5
-  m_SuspensionDistance: 0.3
-  m_ForceAppPointDistance: 0
-  m_Mass: 60
-  m_WheelDampingRate: 0.25
-  m_ForwardFriction:
-    m_ExtremumSlip: 0.4
-    m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.8
-    m_AsymptoteValue: 0.5
-    m_Stiffness: 1
-  m_SidewaysFriction:
-    m_ExtremumSlip: 0.2
-    m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.5
-    m_AsymptoteValue: 0.75
-    m_Stiffness: 1
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_Enabled: 1
-  m_ProvidesContacts: 0
 --- !u!1 &3582197906501595437
 GameObject:
   m_ObjectHideFlags: 0
@@ -956,9 +876,6 @@ GameObject:
   - component: {fileID: 3453239408232682902}
   - component: {fileID: 5972814223650392178}
   - component: {fileID: 5999883825647389463}
-  - component: {fileID: 3920649879571409516}
-  - component: {fileID: 5580561711214662213}
-  - component: {fileID: 6706923243028696483}
   m_Layer: 0
   m_Name: body
   m_TagString: Untagged
@@ -1034,69 +951,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &3920649879571409516
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6594016625482795712}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 2.492178, y: 0.6194527, z: 7.704783}
-  m_Center: {x: 0, y: 0.89583254, z: -0.63194394}
---- !u!65 &5580561711214662213
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6594016625482795712}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 2.2271507, y: 1.8503599, z: 2.104714}
-  m_Center: {x: 0, y: 2.12849, z: 2.0215614}
---- !u!65 &6706923243028696483
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6594016625482795712}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.82639444, y: 0.28258085, z: 0.8480978}
-  m_Center: {x: 0, y: 1.3508384, z: -2.7272472}
 --- !u!1 &7585604621986527051
 GameObject:
   m_ObjectHideFlags: 0
@@ -1215,11 +1069,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7985c9ee4181154a9647dc6c4b0c1cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathPoints: []
+  waypoints: []
+  radius: 5
   speed: 2
-  maxLaps: 3
-  rotationSpeed: 2
-  destination: {fileID: 0}
+  script: {fileID: 0}
+  destinationred: {fileID: 0}
   destinationoffice: {fileID: 0}
   destinationfactory: {fileID: 0}
   destinationwarehouse: {fileID: 0}
+  winpanel: {fileID: 0}
+  losepanel: {fileID: 0}
+  angle: 0
+  remainingLaps: 3
+  laps: {fileID: 0}
