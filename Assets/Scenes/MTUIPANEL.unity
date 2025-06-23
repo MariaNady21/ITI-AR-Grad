@@ -241,7 +241,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a4be90a08c53be41aaab2035aa12529, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickSoundName: 
 --- !u!114 &25361346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3036,7 +3035,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1200426520
 MonoBehaviour:
   m_ObjectHideFlags: 0
