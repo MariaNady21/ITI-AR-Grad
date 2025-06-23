@@ -1,40 +1,41 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GameSceneController : MonoBehaviour
 {
     public GameObject infoPanel;
     public GameObject[] gameElementsToHide;
-    AudioManager audioManager;
+
+    public AudioSource audioSource;
+    public AudioClip infoClip;
+    public AudioClip gameClip;
+    private AudioManager audioManager;
+
+
+
     void Start()
     {
-        audioManager = AudioManager.instance;
-       
-    }
-    public void StartGame()
-    {
-        SceneManager.LoadScene("whack a mole"); 
-    }
-
-    public void ShowInfo()
-    {
-        infoPanel.SetActive(true);
-        audioManager.PlaySFX("INFO");
-        audioManager.StopMusic();
-
-        foreach (var element in gameElementsToHide)
+        
+        if (SceneEntryMode.isInfoMode)
         {
-            element.SetActive(false);
+            infoPanel.SetActive(true);
+           
+            audioManager.StopMusic();
+
+            foreach (GameObject obj in gameElementsToHide)
+                obj.SetActive(false);
+
+           
+            audioSource.Stop();
+            audioSource.clip = infoClip;
+            audioSource.Play();
         }
-    }
-
-    public void HideInfo()
-    {
-        infoPanel.SetActive(false);
-
-        foreach (var element in gameElementsToHide)
+        else
         {
-            element.SetActive(true);
+            infoPanel.SetActive(false);
+
+            audioSource.Stop();
+            audioSource.clip = gameClip;
+            audioSource.Play();
         }
     }
 }
