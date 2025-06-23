@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MTUIPANEL.unity
     guid: 7051c66583d3b6044b784e7185063b29
   - enabled: 1
-    path: Assets/ASH/IOS/scene/GAMEIOS.unity
+    path: Assets/Scenes/GAMEIOS.unity
     guid: ef097bef64ead3f4e98ce2e6dba4dc81
   - enabled: 1
     path: Assets/Scenes/car labs.unity
