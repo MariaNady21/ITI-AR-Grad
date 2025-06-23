@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class GameSceneController : MonoBehaviour
 {
@@ -8,23 +8,17 @@ public class GameSceneController : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip infoClip;
     public AudioClip gameClip;
-    private AudioManager audioManager;
-
-
 
     void Start()
     {
-        
         if (SceneEntryMode.isInfoMode)
         {
             infoPanel.SetActive(true);
-           
-            audioManager.StopMusic();
 
             foreach (GameObject obj in gameElementsToHide)
                 obj.SetActive(false);
 
-           
+            // ÊÃßÏ Åä ÇáÕæÊ ÈíÔÊÛá ÈÔßá äÙíÝ
             audioSource.Stop();
             audioSource.clip = infoClip;
             audioSource.Play();
@@ -39,4 +33,3 @@ public class GameSceneController : MonoBehaviour
         }
     }
 }
-

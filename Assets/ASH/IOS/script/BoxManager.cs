@@ -81,10 +81,10 @@ public class BoxManager : MonoBehaviour
                         clone.transform.localScale = new Vector3(0.3f, 0.5f, 0.2f);
                         break;
                     case "text":
-                        clone.transform.localScale = new Vector3(0.4f, 0.3f, 0.4f);
+                        clone.transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
                         break;
                     case "image":
-                        clone.transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
+                        clone.transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
                         break;
                     case "input":
                         clone.transform.localScale = new Vector3(0.3f, 0.4f, 0.2f);
