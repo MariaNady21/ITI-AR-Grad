@@ -25,7 +25,7 @@ public class LoadGameSceneFromPlay : MonoBehaviour
     {
         SceneEntryMode.isInfoMode = false;
         AudioManager.instance.PlaySFX(clickSoundName);
-        yield return new WaitForSeconds(0.5f); //  √ŒÌ— »”Ìÿ ﬁ»· «·‰ﬁ· ··„‘Âœ
+        yield return new WaitForSeconds(0.5f); 
         SceneManager.LoadScene(sceneIndex);
     }
 
