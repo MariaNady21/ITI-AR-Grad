@@ -1,35 +1,34 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameSceneController : MonoBehaviour
 {
     public GameObject infoPanel;
     public GameObject[] gameElementsToHide;
 
-    public AudioSource audioSource;
-    public AudioClip infoClip;
-    public AudioClip gameClip;
-
-    void Start()
+    public void StartGame()
     {
-        if (SceneEntryMode.isInfoMode)
+        // Example: load the game scene
+        SceneManager.LoadScene("whack a mole"); // Make sure this matches your scene name
+    }
+
+    public void ShowInfo()
+    {
+        infoPanel.SetActive(true);
+
+        foreach (var element in gameElementsToHide)
         {
-            infoPanel.SetActive(true);
-
-            foreach (GameObject obj in gameElementsToHide)
-                obj.SetActive(false);
-
-            //  √ﬂœ ≈‰ «·’Ê  »Ì‘ €· »‘ﬂ· ‰ŸÌ›
-            audioSource.Stop();
-            audioSource.clip = infoClip;
-            audioSource.Play();
+            element.SetActive(false);
         }
-        else
-        {
-            infoPanel.SetActive(false);
+    }
 
-            audioSource.Stop();
-            audioSource.clip = gameClip;
-            audioSource.Play();
+    public void HideInfo()
+    {
+        infoPanel.SetActive(false);
+
+        foreach (var element in gameElementsToHide)
+        {
+            element.SetActive(true);
         }
     }
 }
