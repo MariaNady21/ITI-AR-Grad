@@ -16,8 +16,6 @@ public class BoxManager : MonoBehaviour
 
     [Header("Explosion Effect")]
     public GameObject explosionEffectPrefab;
-    public AudioClip explosionSound;
-    public AudioSource audioSource;
 
     [Header("عناصر إضافية بعد البناء")]
     public GameObject extraPhoneObject;
@@ -48,7 +46,7 @@ public class BoxManager : MonoBehaviour
                 Instantiate(explosionEffectPrefab, transform.position, Quaternion.identity);
             }
 
-            // ✅ تشغيل صوت الانفجار من AudioManager
+            // ✅ تشغيل صوت الانفجار من AudioManager فقط
             if (AudioManager.instance != null)
             {
                 AudioManager.instance.PlaySFX("explosion");
