@@ -13,6 +13,7 @@ public class Scorenum : MonoBehaviour
     public GameObject losepanel;
 
     public bool panelShown = false;
+    AudioManager audioManager;
     /* public GameObject winpanel;
      public GameObject losepanel;
      public static int counter = 0;
@@ -29,11 +30,15 @@ public class Scorenum : MonoBehaviour
 
         if (score >= 40 && Vehicle.counter == 4)
         {
+            audioManager.PlaySFX("WinCar labs");
+            audioManager.StopMusic();
             winpanel.SetActive(true);
             panelShown = true;
         }
         else if (score < 40 && Vehicle.counter == 4)
         {
+            audioManager.PlaySFX("ConectTheDotWin");
+            audioManager.StopMusic();
             losepanel.SetActive(true);
             panelShown = true;
         }
