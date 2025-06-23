@@ -18,7 +18,11 @@ public class Scorenum : MonoBehaviour
      public GameObject losepanel;
      public static int counter = 0;
      private bool panelShown = false;*/
-
+    void Start()
+    {
+        audioManager = AudioManager.instance;
+        
+    }
 
     void Update()
     {
@@ -37,8 +41,8 @@ public class Scorenum : MonoBehaviour
         }
         else if (score < 40 && Vehicle.counter == 4)
         {
-          //  audioManager.PlaySFX("ConectTheDotWin");
-           // audioManager.StopMusic();
+           audioManager.PlaySFX("carLabs Lose");
+            audioManager.StopMusic();
             losepanel.SetActive(true);
             panelShown = true;
         }

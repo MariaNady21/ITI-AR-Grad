@@ -4,11 +4,14 @@ using System.Collections;
 
 public class LoadGameSceneFromInfo : MonoBehaviour
 {
-    public string clickSoundName;
+  private string clickSoundName;
 
-    public void LoadSceneGame()
+   
+ 
+public void LoadSceneGame()
     {
         StartCoroutine(PlaySoundAndLoadScene(3));
+            
     }
 
     public void LoadSceneGallery()
