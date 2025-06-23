@@ -25,10 +25,18 @@ public class GenericBuilding : MonoBehaviour
         VehicleType? vehicle = GetVehicleTypeFromTag(other.tag);
         if (vehicle == null) return;
 
+        Vehicle vehicleScript = other.GetComponent<Vehicle>();
+        if (vehicleScript == null) return;
+
+        if (vehicleScript.hasScored) return; //  already scored before
+
         int scoreChange = GetScoreChange(buildingType, vehicle.Value);
         scoreManager.score += scoreChange;
+        vehicleScript.hasScored = true; //  prevent double scoring
+
         Debug.Log($"Vehicle: {vehicle}, Building: {buildingType}, Score Changed By: {scoreChange}, Total Score: {scoreManager.score}");
     }
+
 
     VehicleType? GetVehicleTypeFromTag(string tag)
     {
