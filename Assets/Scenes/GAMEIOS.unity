@@ -4005,6 +4005,7 @@ GameObject:
   - component: {fileID: 1392187269}
   - component: {fileID: 1392187268}
   - component: {fileID: 1392187270}
+  - component: {fileID: 1392187271}
   m_Layer: 0
   m_Name: sound
   m_TagString: Untagged
@@ -4019,7 +4020,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1392187267}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca6f75b1646df054390ef02baee38198, type: 3}
   m_Name: 
@@ -4052,6 +4053,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clipNameToMute: bgioss
+--- !u!114 &1392187271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392187267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acb38b597ad26ac45bf0cc40df8ea152, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioManagerPrefab: {fileID: 1474666134843450212, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
 --- !u!1 &1397858460
 GameObject:
   m_ObjectHideFlags: 0
