@@ -23,7 +23,7 @@ public class Vehicle : MonoBehaviour
   
     private bool isCircling = true;
     public float angle = 0f;
-    private float previousAngle = 0f;
+    
 
     public int remainingLaps = 3; 
     public TextMeshProUGUI laps;
