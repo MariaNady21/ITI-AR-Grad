@@ -5,16 +5,22 @@ public class GameSceneController : MonoBehaviour
 {
     public GameObject infoPanel;
     public GameObject[] gameElementsToHide;
-
+    AudioManager audioManager;
+    void Start()
+    {
+        audioManager = AudioManager.instance;
+       
+    }
     public void StartGame()
     {
-        // Example: load the game scene
-        SceneManager.LoadScene("whack a mole"); // Make sure this matches your scene name
+        SceneManager.LoadScene("whack a mole"); 
     }
 
     public void ShowInfo()
     {
         infoPanel.SetActive(true);
+        audioManager.PlaySFX("INFO");
+        audioManager.StopMusic();
 
         foreach (var element in gameElementsToHide)
         {
