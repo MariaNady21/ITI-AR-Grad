@@ -11,12 +11,14 @@ public class LoadGameSceneFromInfo : MonoBehaviour
 public void LoadSceneGame()
     {
         StartCoroutine(PlaySoundAndLoadScene(3));
-            
+        AudioManager.instance.PlaySFX("Embedded Info");
+
     }
 
     public void LoadSceneGallery()
     {
         StartCoroutine(PlaySoundAndLoadScene(5));
+        AudioManager.instance.PlaySFX("Embedded Info");
     }
 
     public void LoadSceneIOS()
@@ -28,7 +30,7 @@ public void LoadSceneGame()
     {
         SceneEntryMode.isInfoMode = true;
         AudioManager.instance.PlaySFX(clickSoundName);
-        yield return new WaitForSeconds(0.5f); //  √ŒÌ— »”Ìÿ ﬁ»· «·‰ﬁ· ··„‘Âœ
+        yield return new WaitForSeconds(0.5f); 
         SceneManager.LoadScene(sceneIndex);
     }
 
@@ -36,12 +38,14 @@ public void LoadSceneGame()
     {
         SceneEntryMode.isInfoMode = true;
         SceneManager.LoadScene(2);
+        AudioManager.instance.PlaySFX("Embedded Info");
     }
 
     public void LoadSceneEmbedded()
     {
         SceneEntryMode.isInfoMode = true;
         SceneManager.LoadScene(4);
+        AudioManager.instance.PlaySFX("Embedded Info");
     }
 
 }

@@ -34,7 +34,7 @@ public class GameManger : MonoBehaviour
         if (AudioManager.instance != null)
         {
             audioManager = AudioManager.instance;
-            AudioManager.instance.PlayMusic("BackGround");
+           // AudioManager.instance.PlayMusic("BackGround");
         }
         else
         {

@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/EmbeddedGame.unity
     guid: 3afdd7a942999864fb57154f963bdeeb
   - enabled: 1
-    path: Assets/Gallery/Scenes/AR Portal.unity
+    path: Assets/Scenes/AR Portal.unity
     guid: 5963aa26e183c4648bc67986a39963d4
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

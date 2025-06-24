@@ -35,13 +35,18 @@ public class AudioManager : MonoBehaviour
             backgroundMusic = gameObject.AddComponent<AudioSource>();
             backgroundMusic.loop = true;
         }
-        isMusicMuted = false;
-        PlayerPrefs.SetInt("musicMuted", 0);
+       
 
         if (sfxSource == null)
         {
             sfxSource = gameObject.AddComponent<AudioSource>();
             sfxSource.loop = false;
+        }
+        isMusicMuted = false;
+        PlayerPrefs.SetInt("musicMuted", 0);
+        if (!disableAutoMusic && !SceneEntryMode.isInfoMode)
+        {
+            PlayMusic("YourDefaultTrackName");
         }
     }
 
