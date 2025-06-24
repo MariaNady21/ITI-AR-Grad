@@ -7,7 +7,8 @@ public class SceneLoader : MonoBehaviour
     {
         if (AudioManager.instance != null)
         {
-            AudioManager.instance.StopMusic(); 
+            AudioManager.instance.StopMusic();
+            AudioManager.instance.GetSFXSource().Stop();
         }
         SceneManager.LoadScene(0);
     }
