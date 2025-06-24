@@ -26,7 +26,7 @@ public class LineDrawerManager : MonoBehaviour
         if (AudioManager.instance != null)
         {
             audioManager = AudioManager.instance;
-            AudioManager.instance.PlayMusic("bg emb");
+           // AudioManager.instance.PlayMusic("bg emb");
         }
         else
         {

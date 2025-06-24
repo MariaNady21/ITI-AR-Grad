@@ -4,16 +4,19 @@ using System.Collections;
 
 public class LoadGameSceneFromPlay : MonoBehaviour
 {
-    public string clickSoundName;
+    private string clickSoundName;
+    AudioManager audioManager;
 
     public void LoadSceneGame()
     {
         StartCoroutine(PlaySoundAndLoadScene(3));
+        AudioManager.instance.PlayMusic("BackGround");
     }
 
     public void LoadSceneGallery()
     {
         StartCoroutine(PlaySoundAndLoadScene(5));
+        AudioManager.instance.PlayMusic("happy-relaxing-loop-275487");
     }
 
     public void LoadSceneIOS()
@@ -25,7 +28,9 @@ public class LoadGameSceneFromPlay : MonoBehaviour
     {
         SceneEntryMode.isInfoMode = false;
         AudioManager.instance.PlaySFX(clickSoundName);
-        yield return new WaitForSeconds(0.5f); 
+        yield return new WaitForSeconds(0.5f);
+      
+
         SceneManager.LoadScene(sceneIndex);
     }
 
@@ -33,12 +38,15 @@ public class LoadGameSceneFromPlay : MonoBehaviour
     {
         SceneEntryMode.isInfoMode = false;
         SceneManager.LoadScene(2);
+        AudioManager.instance.PlayMusic("IOT-BG");
     }
 
     public void LoadSceneEmbedded()
     {
         SceneEntryMode.isInfoMode = false;
         SceneManager.LoadScene(4);
+        
+        AudioManager.instance.PlayMusic("bg emb");
     }
 
 }
