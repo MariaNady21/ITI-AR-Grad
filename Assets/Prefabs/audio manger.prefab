@@ -194,7 +194,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6bb86782f073ff946901e04cacb89684, type: 3}
   - {fileID: 8300000, guid: 39d6ea42c21dcaa44855a4a5941f4d2a, type: 3}
   - {fileID: 8300000, guid: 662d7051a36118d4998338528e19af84, type: 3}
-  - {fileID: 8300000, guid: 95ef9ecc436830b4996a52c49e3e53a7, type: 3}
+  - {fileID: 8300000, guid: 0afa47a9432323d41a7dd0fd42005ec5, type: 3}
   - {fileID: 8300000, guid: 163124003d4ce48438f9a2a676f23180, type: 3}
   disableAutoMusic: 1
 --- !u!1 &6551422305847332684

@@ -335,7 +335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f791b2f3a24e1c43b14755cae6b3f57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  infoPanel: {fileID: 0}
+  infoPanel: {fileID: 1862984491}
   gameElementsToHide:
   - {fileID: 1029564810}
   - {fileID: 1216373368}
@@ -1438,10 +1438,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   gridLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 0
   winPanel: {fileID: 989006921}
   currentColor: {r: 0, g: 0, b: 0, a: 0}
   currentID: 

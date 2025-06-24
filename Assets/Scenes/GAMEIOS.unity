@@ -5521,7 +5521,7 @@ MonoBehaviour:
   gameElementsToHide:
   - {fileID: 2113822345}
   audioSource: {fileID: 2114372812}
-  infoClip: {fileID: 8300000, guid: 8d5ddb7ba944b474a893c661a8346558, type: 3}
+  infoClip: {fileID: 8300000, guid: 39d6ea42c21dcaa44855a4a5941f4d2a, type: 3}
   gameClip: {fileID: 8300000, guid: be8f069506d650546aa815e445f1fcd8, type: 3}
 --- !u!4 &1849594861
 Transform:
