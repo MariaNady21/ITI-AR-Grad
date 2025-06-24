@@ -41,7 +41,7 @@ public class Vehicle : MonoBehaviour
     void Start()
     {
         audioManager = AudioManager.instance;
-        AudioManager.instance.PlayMusic("IOT-BG");
+        //AudioManager.instance.PlayMusic("IOT-BG");
     }
     void Update()
     {

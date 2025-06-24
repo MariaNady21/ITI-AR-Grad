@@ -11,14 +11,14 @@ public class LoadGameSceneFromInfo : MonoBehaviour
 public void LoadSceneGame()
     {
         StartCoroutine(PlaySoundAndLoadScene(3));
-        AudioManager.instance.PlaySFX("Embedded Info");
+        AudioManager.instance.PlaySFX("Game INfo");
 
     }
 
     public void LoadSceneGallery()
     {
         StartCoroutine(PlaySoundAndLoadScene(5));
-        AudioManager.instance.PlaySFX("Embedded Info");
+       
     }
 
     public void LoadSceneIOS()
@@ -38,14 +38,14 @@ public void LoadSceneGame()
     {
         SceneEntryMode.isInfoMode = true;
         SceneManager.LoadScene(2);
-        AudioManager.instance.PlaySFX("Embedded Info");
+        AudioManager.instance.PlaySFX("IOT INFO");
     }
 
     public void LoadSceneEmbedded()
     {
         SceneEntryMode.isInfoMode = true;
         SceneManager.LoadScene(4);
-        AudioManager.instance.PlaySFX("Embedded Info");
+        AudioManager.instance.PlaySFX("Embedded INFO");
     }
 
 }
