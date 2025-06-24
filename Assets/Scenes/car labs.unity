@@ -7587,8 +7587,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 24.239998, y: -0.8999939}
-  m_SizeDelta: {x: 239.59, y: 338.1}
+  m_AnchoredPosition: {x: 23.18, y: -16}
+  m_SizeDelta: {x: 267.79, y: 417.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2100056653
 MonoBehaviour:
@@ -7610,17 +7610,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u2705 What is an Embedded System?\nA small computer system built into
-    a larger device, designed to perform a specific task.\n\n\U0001F4E6 Main Components:\nMicrocontroller
-    (MCU) \u2013 The brain of the system.\n\nMemory \u2013 ROM (for program), RAM
-    (for data).\n\nInputs/Outputs \u2013 Like sensors, LEDs, motors.\n\nFirmware
-    \u2013 The software written in C/C++.\n\nPower Supply \u2013 To run the system.\n\n\U0001F6E0\uFE0F
-    Common Applications:\nWashing machines\n\nCars (airbags, ABS)\n\nSmart home devices
-    (IoT)\n\nMedical tools (heart monitors)\n\n\U0001F4BB Programming Languages:\nC
-    \u2013 Most commonly used.\n\nC++ \u2013 For more advanced features.\n\nPython
-    \u2013 Used in some boards like ESP32, Raspberry Pi.\n\n\U0001F680 How to Start?\nUse
-    Arduino to learn basics.\n\nLearn C programming.\n\nTry small projects: blink
-    an LED, read a sensor, control a motor.\n\nff"
+  m_text: The Internet of Things (IoT) refers to a network of interconnected devices,
+    vehicles, appliances, and other physical objects that can collect and exchange
+    data with each other and with systems over the internet. These "things" are embedded
+    with sensors, software, and other technologies that enable them to connect and
+    interact.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7685,7 +7679,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 17.696709, z: -1.7415237, w: 18.896942}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

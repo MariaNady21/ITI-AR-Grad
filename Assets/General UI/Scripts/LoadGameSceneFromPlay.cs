@@ -16,6 +16,7 @@ public class LoadGameSceneFromPlay : MonoBehaviour
     public void LoadSceneGallery()
     {
         StartCoroutine(PlaySoundAndLoadScene(5));
+        AudioManager.instance.PlayMusic("happy-relaxing-loop-275487");
     }
 
     public void LoadSceneIOS()
@@ -37,7 +38,7 @@ public class LoadGameSceneFromPlay : MonoBehaviour
     {
         SceneEntryMode.isInfoMode = false;
         SceneManager.LoadScene(2);
-        AudioManager.instance.PlayMusic("bg emb");
+        AudioManager.instance.PlayMusic("IOT-BG");
     }
 
     public void LoadSceneEmbedded()
