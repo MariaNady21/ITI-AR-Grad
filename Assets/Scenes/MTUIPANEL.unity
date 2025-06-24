@@ -647,9 +647,9 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: EMBEDDEDLAB
+  mTrackableName: emmbedded
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/IT-LABS.xml
+  mDataSetPath: Vuforia/ITI.xml
   mAspectRatio: 1.5
   mImageTargetType: 0
   mWidth: 1
@@ -689,8 +689,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 299807254}
   mHiddenRoot: {fileID: 0}
-  mTargetName: EMBEDDEDLAB
-  mDatasetName: Vuforia/IT-LABS.xml
+  mTargetName: emmbedded
+  mDatasetName: Vuforia/ITI.xml
   mCastedBehaviour: {fileID: 299807254}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -2486,9 +2486,9 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: IOSLAB
+  mTrackableName: ios
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/IT-LABS.xml
+  mDataSetPath: Vuforia/ITI.xml
   mAspectRatio: 1.5
   mImageTargetType: 0
   mWidth: 1
@@ -2528,8 +2528,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1040667878}
   mHiddenRoot: {fileID: 0}
-  mTargetName: IOSLAB
-  mDatasetName: Vuforia/IT-LABS.xml
+  mTargetName: ios
+  mDatasetName: Vuforia/ITI.xml
   mCastedBehaviour: {fileID: 1040667878}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -4035,9 +4035,9 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: GALLERYLAB
+  mTrackableName: gallary
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/IT-LABS.xml
+  mDataSetPath: Vuforia/ITI.xml
   mAspectRatio: 1.5
   mImageTargetType: 0
   mWidth: 1
@@ -4077,8 +4077,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1408528722}
   mHiddenRoot: {fileID: 0}
-  mTargetName: GALLERYLAB
-  mDatasetName: Vuforia/IT-LABS.xml
+  mTargetName: gallary
+  mDatasetName: Vuforia/ITI.xml
   mCastedBehaviour: {fileID: 1408528722}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -4184,13 +4184,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: IOTLAB
+  mTrackableName: iotimage
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/IT-LABS.xml
-  mAspectRatio: 1.501466
+  mDataSetPath: Vuforia/ITI.xml
+  mAspectRatio: 1.5
   mImageTargetType: 0
   mWidth: 1
-  mHeight: 1.501466
+  mHeight: 1.5
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -4226,8 +4226,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1425899793}
   mHiddenRoot: {fileID: 0}
-  mTargetName: IOTLAB
-  mDatasetName: Vuforia/IT-LABS.xml
+  mTargetName: iotimage
+  mDatasetName: Vuforia/ITI.xml
   mCastedBehaviour: {fileID: 1425899793}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
@@ -5782,13 +5782,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: GAMELAB
+  mTrackableName: game
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/IT-LABS.xml
-  mAspectRatio: 1.501466
+  mDataSetPath: Vuforia/ITI.xml
+  mAspectRatio: 1.5
   mImageTargetType: 0
   mWidth: 1
-  mHeight: 1.501466
+  mHeight: 1.5
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -5824,8 +5824,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 2004029010}
   mHiddenRoot: {fileID: 0}
-  mTargetName: GAMELAB
-  mDatasetName: Vuforia/IT-LABS.xml
+  mTargetName: game
+  mDatasetName: Vuforia/ITI.xml
   mCastedBehaviour: {fileID: 2004029010}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
