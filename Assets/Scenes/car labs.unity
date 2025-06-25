@@ -759,8 +759,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 3.6900024, y: 0}
+  m_SizeDelta: {x: -67.05, y: 0.000030518}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &229916241
 MonoBehaviour:
@@ -2118,8 +2118,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -12.7, y: -6}
-  m_SizeDelta: {x: 239.59, y: 338.1}
+  m_AnchoredPosition: {x: 2.1255, y: -0.0008688}
+  m_SizeDelta: {x: 276.9, y: 412.38}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &655005064
 MonoBehaviour:
@@ -2141,11 +2141,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "The Internet of Things (IoT) refers to a network\nof interconnected devices,
-    vehicles, \nappliances, and other physical objects that\ncan collect and exchange
-    data with each other\nand with systems over the internet. \nThese \"things\"
-    are embedded with sensors,\nsoftware, and other technologies that enable\nthem
-    to connect and interact.\r\n"
+  m_text: "The Internet of Things (IoT) is a network of smart devices embedded with
+    \r\nsensors and software that collect and exchange data over the internet. \r\nThese
+    devices connect and interact with each other and external systems.\nJob Profiles\nFront-End
+    Developer\r\nIot Applications Developer\r\nIot End-to-end Architect\r\nIot Systems
+    Integration Engineer\r\nWeb Application Developer"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
@@ -2172,15 +2172,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 19
+  m_fontSizeBase: 19
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -2188,7 +2188,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 0
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -2210,7 +2210,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -24.433167, w: 16.837738}
+  m_margin: {x: 0, y: 18.87703, z: -2.2330627, w: 16.837738}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
