@@ -45,7 +45,7 @@ public void LoadSceneGame()
     {
         SceneEntryMode.isInfoMode = true;
         SceneManager.LoadScene(4);
-        AudioManager.instance.PlaySFX("Embedded INFO");
+        AudioManager.instance.PlaySFX("Embedded Info");
     }
 
 }

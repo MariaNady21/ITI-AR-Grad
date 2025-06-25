@@ -887,8 +887,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1766682550}
-        m_TargetAssemblyTypeName: Vehicle, Assembly-CSharp
+      - m_Target: {fileID: 1093745232}
+        m_TargetAssemblyTypeName: Scorenum, Assembly-CSharp
         m_MethodName: ReloadScene
         m_Mode: 1
         m_Arguments:
@@ -1189,7 +1189,6 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1555196602}
-  - {fileID: 1093580989}
   - {fileID: 2072853338}
   - {fileID: 494412405}
   m_Father: {fileID: 0}
@@ -3173,14 +3172,14 @@ Transform:
   m_GameObject: {fileID: 1044435740}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.54643, y: -92.55432, z: 235993.58}
+  m_LocalPosition: {x: -109.45357, y: -211.55432, z: 235377.58}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 104013940}
   - {fileID: 350242056}
   - {fileID: 1133294869}
-  m_Father: {fileID: 1093580989}
+  m_Father: {fileID: 1555196602}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1061567853
 GameObject:
@@ -3320,42 +3319,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1061567853}
   m_CullTransparentMesh: 1
---- !u!1 &1093580988
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1093580989}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1093580989
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1093580988}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1044435741}
-  m_Father: {fileID: 438716988}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -56}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1093745230
 GameObject:
   m_ObjectHideFlags: 0
@@ -3487,8 +3450,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1766682550}
-        m_TargetAssemblyTypeName: Vehicle, Assembly-CSharp
+      - m_Target: {fileID: 1093745232}
+        m_TargetAssemblyTypeName: Scorenum, Assembly-CSharp
         m_MethodName: ToggleMusic
         m_Mode: 1
         m_Arguments:
@@ -4895,6 +4858,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1628432591}
+  - {fileID: 1044435741}
   m_Father: {fileID: 438716988}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -6344,17 +6308,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 665331437915392619, guid: efefdd4692b74084dbeefd6916e4820a, type: 3}
   m_PrefabInstance: {fileID: 1766682548}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1766682550 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2798066866683623390, guid: efefdd4692b74084dbeefd6916e4820a, type: 3}
-  m_PrefabInstance: {fileID: 1766682548}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1693192467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7985c9ee4181154a9647dc6c4b0c1cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!136 &1766682551
 CapsuleCollider:
   m_ObjectHideFlags: 0

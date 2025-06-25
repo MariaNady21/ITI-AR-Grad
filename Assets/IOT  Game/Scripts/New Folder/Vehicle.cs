@@ -40,8 +40,16 @@ public class Vehicle : MonoBehaviour
 
     void Start()
     {
-        audioManager = AudioManager.instance;
-        //AudioManager.instance.PlayMusic("IOT-BG");
+        if (AudioManager.instance != null)
+        {
+            audioManager = AudioManager.instance;
+            audioManager.PlayMusic("IOT-BG");
+
+        }
+        else
+        {
+            Debug.LogWarning("AudioManager not found in scene!");
+        }
     }
     void Update()
     {
@@ -276,23 +284,7 @@ public class Vehicle : MonoBehaviour
     }
 
 
-    public void ReloadScene()
-    {
-        Scene currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.buildIndex);
-
-        if (!AudioManager.instance.GetComponent<AudioSource>().isPlaying)
-        {
-            AudioManager.instance.PlayMusic("IOT-BG");
-        }
-    }
-    public void ToggleMusic()
-    {
-        if (AudioManager.instance != null)
-        {
-            AudioManager.instance.ToggleMusic();
-        }
-    }
+   
 
 
 }
