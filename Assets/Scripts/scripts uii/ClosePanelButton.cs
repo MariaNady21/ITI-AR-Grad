@@ -26,6 +26,7 @@ public class ClosePanelButton : MonoBehaviour
     public void ReloadScene()
     {
         Scene currentScene = SceneManager.GetActiveScene();
+        Vehicle.counter = 0;
         SceneManager.LoadScene(currentScene.buildIndex);
 
         if (!AudioManager.instance.GetComponent<AudioSource>().isPlaying)

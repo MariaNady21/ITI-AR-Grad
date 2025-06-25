@@ -62,6 +62,7 @@ public class SimpleTimer : MonoBehaviour
     {
         if (winImage != null)
             winImage.SetActive(true);
+        
 
         if (AudioManager.instance != null)
             AudioManager.instance.PlaySFX("I win");

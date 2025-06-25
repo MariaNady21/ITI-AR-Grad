@@ -5,6 +5,7 @@ public class SceneLoader : MonoBehaviour
 {
     public void BackFromGame()
     {
+        Vehicle.counter = 0;
         if (AudioManager.instance != null)
         {
             AudioManager.instance.StopMusic();
