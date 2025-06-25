@@ -60,25 +60,27 @@ public class SimpleTimer : MonoBehaviour
 
     void ShowWin()
     {
+        StopBGIOSSound();
+
         if (winImage != null)
             winImage.SetActive(true);
 
         if (AudioManager.instance != null)
             AudioManager.instance.PlaySFX("I win");
 
-        StopBGIOSSound();
         HideOthers();
     }
 
     void ShowLose()
     {
+        StopBGIOSSound();
+
         if (loseImage != null)
             loseImage.SetActive(true);
 
         if (AudioManager.instance != null)
             AudioManager.instance.PlaySFX("game-over");
 
-        StopBGIOSSound();
         HideOthers();
     }
 
@@ -87,7 +89,7 @@ public class SimpleTimer : MonoBehaviour
         if (bgiossAudioSource != null && bgiossAudioSource.isPlaying)
         {
             bgiossAudioSource.Stop();
-            Debug.Log("🎵 bgioss stopped");
+            Debug.Log("🎵 bgioss stopped: " + bgiossAudioSource.name);
         }
         else
         {
@@ -104,3 +106,4 @@ public class SimpleTimer : MonoBehaviour
         }
     }
 }
+
