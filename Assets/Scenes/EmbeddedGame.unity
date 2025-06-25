@@ -468,7 +468,7 @@ Transform:
   m_GameObject: {fileID: 540205654}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.366, y: -0.417, z: 2.077}
+  m_LocalPosition: {x: 0.33, y: -0.24, z: 1.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1888,10 +1888,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 72
   gridLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   winPanel: {fileID: 989006921}
   currentColor: {r: 0, g: 0, b: 0, a: 0}
   currentID: 
@@ -2403,7 +2403,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5043180447205134857, guid: ced065cfdb99b6c499470a7c37b7db2b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.379
+      value: 0.32
       objectReference: {fileID: 0}
     - target: {fileID: 5043180447205134857, guid: ced065cfdb99b6c499470a7c37b7db2b, type: 3}
       propertyPath: m_LocalPosition.y
