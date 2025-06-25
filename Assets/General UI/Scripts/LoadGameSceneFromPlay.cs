@@ -5,7 +5,7 @@ using System.Collections;
 public class LoadGameSceneFromPlay : MonoBehaviour
 {
     private string clickSoundName;
-    AudioManager audioManager;
+    //AudioManager audioManager;
 
     public void LoadSceneGame()
     {
@@ -38,7 +38,8 @@ public class LoadGameSceneFromPlay : MonoBehaviour
     {
         SceneEntryMode.isInfoMode = false;
         SceneManager.LoadScene(2);
-        AudioManager.instance.PlayMusic("IOT-BG");
+       
+        //AudioManager.instance.PlayMusic("IOT-BG");
     }
 
     public void LoadSceneEmbedded()

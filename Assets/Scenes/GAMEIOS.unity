@@ -4055,7 +4055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acb38b597ad26ac45bf0cc40df8ea152, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioManagerPrefab: {fileID: 1474666134843450212, guid: 64f179d55814dd04f945455fd208a9b9, type: 3}
+  audioManagerPrefab: {fileID: 5476649410531727341, guid: 93dfe2b79b403d342aeb403b3292c872, type: 3}
 --- !u!1 &1397858460
 GameObject:
   m_ObjectHideFlags: 0
@@ -5521,7 +5521,7 @@ MonoBehaviour:
   gameElementsToHide:
   - {fileID: 2113822345}
   audioSource: {fileID: 2114372812}
-  infoClip: {fileID: 8300000, guid: 8d5ddb7ba944b474a893c661a8346558, type: 3}
+  infoClip: {fileID: 8300000, guid: 39d6ea42c21dcaa44855a4a5941f4d2a, type: 3}
   gameClip: {fileID: 8300000, guid: be8f069506d650546aa815e445f1fcd8, type: 3}
 --- !u!4 &1849594861
 Transform:
