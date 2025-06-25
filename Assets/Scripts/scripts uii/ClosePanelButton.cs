@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ClosePanelButton : MonoBehaviour
 {
@@ -19,6 +20,24 @@ public class ClosePanelButton : MonoBehaviour
         if (losepanelToClose != null)
         {
             losepanelToClose.SetActive(false); // Hides the panel
+        }
+    }
+
+    public void ReloadScene()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.buildIndex);
+
+        if (!AudioManager.instance.GetComponent<AudioSource>().isPlaying)
+        {
+            AudioManager.instance.PlayMusic("IOT-BG");
+        }
+    }
+    public void ToggleMusic()
+    {
+        if (AudioManager.instance != null)
+        {
+            AudioManager.instance.ToggleMusic();
         }
     }
 }

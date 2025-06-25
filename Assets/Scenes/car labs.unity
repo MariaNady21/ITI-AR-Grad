@@ -887,8 +887,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1093745232}
-        m_TargetAssemblyTypeName: Scorenum, Assembly-CSharp
+      - m_Target: {fileID: 1260512332}
+        m_TargetAssemblyTypeName: ClosePanelButton, Assembly-CSharp
         m_MethodName: ReloadScene
         m_Mode: 1
         m_Arguments:
@@ -3450,8 +3450,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1093745232}
-        m_TargetAssemblyTypeName: Scorenum, Assembly-CSharp
+      - m_Target: {fileID: 1260512332}
+        m_TargetAssemblyTypeName: ClosePanelButton, Assembly-CSharp
         m_MethodName: ToggleMusic
         m_Mode: 1
         m_Arguments:
