@@ -539,7 +539,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delayPanel: {fileID: 951780742}
   panelToHide: {fileID: 1664695534}
-  delayTime: 10
+  delayTime: 5
   sceneIndex: 2
 --- !u!4 &194151499
 Transform:
@@ -3420,7 +3420,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delayPanel: {fileID: 919052325}
   panelToHide: {fileID: 1005995758}
-  delayTime: 10
+  delayTime: 5
   sceneIndex: 1
 --- !u!4 &1272973902
 Transform:
