@@ -56,5 +56,9 @@ public class Scorenum : MonoBehaviour
 
     }
 
+<<<<<<< Updated upstream
     
+=======
+   
+>>>>>>> Stashed changes
 }

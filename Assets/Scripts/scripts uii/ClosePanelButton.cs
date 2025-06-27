@@ -22,12 +22,19 @@ public class ClosePanelButton : MonoBehaviour
             losepanelToClose.SetActive(false); // Hides the panel
         }
     }
+<<<<<<< Updated upstream
 
     public void ReloadScene()
     {
         Scene currentScene = SceneManager.GetActiveScene();
         Vehicle.counter = 0;
         SceneManager.LoadScene(currentScene.buildIndex);
+=======
+    public void ReloadScene()
+    {
+       // Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene("car labs");
+>>>>>>> Stashed changes
 
         if (!AudioManager.instance.GetComponent<AudioSource>().isPlaying)
         {

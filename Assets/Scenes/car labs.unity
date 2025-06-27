@@ -2141,11 +2141,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< Updated upstream
   m_text: "The Internet of Things (IoT) is a network of smart devices embedded with
     \r\nsensors and software that collect and exchange data over the internet. \r\nThese
     devices connect and interact with each other and external systems.\nJob Profiles\nFront-End
     Developer\r\nIot Applications Developer\r\nIot End-to-end Architect\r\nIot Systems
     Integration Engineer\r\nWeb Application Developer"
+=======
+  m_text: "The Internet of Things (IoT) is a \nnetwork of smart devices embedded
+    \nwith \r         sensors and software that \ncollect and exchange \ndata over
+    the internet. \r\nThese devices connect and interact\n with each other and external
+    systems"
+>>>>>>> Stashed changes
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
@@ -2210,7 +2217,11 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
+<<<<<<< Updated upstream
   m_margin: {x: 0, y: 18.87703, z: -2.2330627, w: 16.837738}
+=======
+  m_margin: {x: 0, y: 0, z: -40.782455, w: 16.837738}
+>>>>>>> Stashed changes
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

@@ -200,10 +200,17 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 163124003d4ce48438f9a2a676f23180, type: 3}
   - {fileID: 8300000, guid: 5894e98f74bc9c949af03091c3bb7194, type: 3}
   - {fileID: 8300000, guid: 16c9db33e5b03724ba23712aef3f75bb, type: 3}
+<<<<<<< Updated upstream
   - {fileID: 8300000, guid: 7b66d9129a0ff8e45825e3f51eab9653, type: 3}
   - {fileID: 8300000, guid: f7d3aff47a20f2245b7b70c58b8b7f1e, type: 3}
   - {fileID: 8300000, guid: 6b34c4f5f9454254a9b6ade771aefa80, type: 3}
   - {fileID: 8300000, guid: 59901225197909842a77a47292a03cca, type: 3}
+=======
+  - {fileID: 8300000, guid: 6b34c4f5f9454254a9b6ade771aefa80, type: 3}
+  - {fileID: 8300000, guid: 59901225197909842a77a47292a03cca, type: 3}
+  - {fileID: 8300000, guid: f7d3aff47a20f2245b7b70c58b8b7f1e, type: 3}
+  - {fileID: 8300000, guid: 7b66d9129a0ff8e45825e3f51eab9653, type: 3}
+>>>>>>> Stashed changes
   disableAutoMusic: 1
 --- !u!1 &6551422305847332684
 GameObject:
