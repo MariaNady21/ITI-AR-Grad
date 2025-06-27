@@ -11,7 +11,7 @@ public class LoadGameSceneFromInfo : MonoBehaviour
 public void LoadSceneGame()
     {
         StartCoroutine(PlaySoundAndLoadScene(3));
-        AudioManager.instance.PlaySFX("Game INfo");
+        AudioManager.instance.PlaySFX("Maria");
 
     }
 
@@ -38,14 +38,14 @@ public void LoadSceneGame()
     {
         SceneEntryMode.isInfoMode = true;
         SceneManager.LoadScene(2);
-        AudioManager.instance.PlaySFX("IOT INFO");
+        AudioManager.instance.PlaySFX("Abdallah");
     }
 
     public void LoadSceneEmbedded()
     {
         SceneEntryMode.isInfoMode = true;
         SceneManager.LoadScene(4);
-        AudioManager.instance.PlaySFX("Embedded Info");
+        AudioManager.instance.PlaySFX("Kenzy");
     }
 
 }

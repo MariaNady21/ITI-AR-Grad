@@ -40,6 +40,7 @@ public class Scorenum : MonoBehaviour
             audioManager.StopMusic();
             winpanel.SetActive(true);
             panelShown = true;
+            Vehicle.counter = 0;
         }
         else if (score < 40 && Vehicle.counter == 4)
         {
@@ -47,6 +48,7 @@ public class Scorenum : MonoBehaviour
             audioManager.StopMusic();
             losepanel.SetActive(true);
             panelShown = true;
+            Vehicle.counter = 0;
         }
 
 
@@ -54,21 +56,5 @@ public class Scorenum : MonoBehaviour
 
     }
 
-    public void ReloadScene()
-    {
-        Scene currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.buildIndex);
-
-        if (!AudioManager.instance.GetComponent<AudioSource>().isPlaying)
-        {
-            AudioManager.instance.PlayMusic("IOT-BG");
-        }
-    }
-    public void ToggleMusic()
-    {
-        if (AudioManager.instance != null)
-        {
-            AudioManager.instance.ToggleMusic();
-        }
-    }
+    
 }
